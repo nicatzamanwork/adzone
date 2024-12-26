@@ -1,0 +1,109 @@
+/* Default styling for large screens */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  gap: 2rem;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-subtitle {
+  font-size: 0.9rem;
+  color: #e53935; /* Red text */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.about-link {
+  display: inline-block;
+  color: #e53935;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #e53935;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.about-link:hover {
+  color: #c62828;
+  border-bottom: 2px solid #c62828;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments for iPhone 14 Pro Max */
+@media (max-width: 430px) {
+  .about {
+    flex-direction: column; /* Stack content vertically on small screens */
+    padding: 2rem 1rem; /* Adjust padding */
+    gap: 1rem;
+  }
+
+  .about-content {
+    text-align: center; /* Center the text on mobile */
+    max-width: 100%; /* Remove max-width to utilize full screen width */
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem; /* Adjust title size for smaller screens */
+    margin-bottom: 1rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem; /* Adjust description font size */
+    margin-bottom: 1.5rem;
+  }
+
+  .about-link {
+    font-size: 1rem; /* Adjust link font size */
+  }
+
+  .about-image {
+    width: 100%; /* Ensure image takes full width */
+    margin-top: 1rem; /* Add some space above the image */
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}

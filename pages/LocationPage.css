@@ -1,0 +1,117 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.location-page {
+  text-align: center;
+  padding: 0 1rem; /* Add padding for small screens */
+}
+
+/* Header Section */
+.header {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 1rem;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.go-back-btn {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ccc;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: red;
+  color: white;
+}
+
+/* Cards Section */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .header {
+    height: 150px; /* Adjust height for smaller screens */
+    justify-content: center; /* Center-align text on small screens */
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .filters {
+    gap: 0.25rem; /* Reduce gap between filter buttons */
+  }
+
+  .filter-btn {
+    padding: 0.25rem 0.5rem; /* Smaller buttons */
+  }
+
+  .card {
+    padding: 0.5rem; /* Reduce card padding */
+  }
+}
