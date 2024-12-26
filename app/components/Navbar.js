@@ -11,14 +11,11 @@ const Navbar = () => {
     checkBox.checked = false;
   };
 
-  const handleContactClick = (e) => {
+  const handleContactButtonClick = (e) => {
+    const checkBox = document.getElementById("check");
+    checkBox.checked = false; // Uncheck the checkbox to close the menu
     e.preventDefault(); // Prevent default anchor behavior
     window.location.href = "/#contact"; // Navigate to the home page with the contact section
-  };
-
-  const handleContactButtonClick = (e) => {
-    closeMenu(); // Close the menu
-    handleContactClick(e); // Navigate to the contact section
   };
 
   return (
