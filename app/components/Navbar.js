@@ -13,11 +13,7 @@ const Navbar = () => {
   };
 
   // Function to handle Contact navigation
-  const handleContactClick = (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
-    closeMenu(); // Close the menu
-    window.location.href = "/#contact"; // Navigate to the contact section on the homepage
-  };
+
 
   return (
     <nav>
@@ -67,7 +63,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="contact-button-mobile">
-          <a href="#contact" onClick={handleContactClick}>
+          <a href="#contact" onClick={closeMenu}>
             Contact
           </a>
         </li>
