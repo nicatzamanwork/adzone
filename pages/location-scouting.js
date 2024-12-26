@@ -11,7 +11,7 @@ const Blog = () => {
       <Navbar />
       <header
         className="header"
-        style={{ backgroundImage: `url('/images/Ateshgah.jpg')` }}
+        style={{ backgroundImage: `url('/images/scouting.jpg')` }}
       >
         <div className="header-overlay">
           <div className="header-content">
@@ -80,7 +80,7 @@ const Blog = () => {
           {/* Service 2 */}
           <div className="service-box">
             <img
-              src="/images/Ateshgah.jpg"
+              src="/images/scouting.jpg"
               alt="Location Scouting"
               className="service-image"
             />
