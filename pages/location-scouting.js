@@ -81,7 +81,7 @@ const Blog = () => {
           <div className="service-box">
             <img
               src="/images/scouting.jpg"
-              alt="Location Scouting"
+              alt="Logistic support"
               className="service-image"
             />
             <div className="service-content">
