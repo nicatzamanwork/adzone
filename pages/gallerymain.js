@@ -11,7 +11,7 @@ export default function GalleryMain() {
       link: "/gallery",
     },
     {
-      title: "Beach",
+      title: "Desert",
       description: "Find beautiful beaches perfect for your next shoot.",
       image: "/images/Mud volcanoes (14).jpg",
       link: "/gallery",
