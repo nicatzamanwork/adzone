@@ -11,14 +11,6 @@ const Navbar = () => {
     checkBox.checked = false;
   };
 
-  const handleContactButtonClick = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
-    window.location.href = "/#contact";
-    const checkBox = document.getElementById("check");
-    checkBox.checked = false; // Uncheck the checkbox to close the menu
-    // Navigate to the home page with the contact section
-  };
-
   return (
     <nav>
       {/* Checkbox for toggling the menu */}
@@ -67,12 +59,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="contact-button-mobile">
-          <a
-            href="#contact"
-            onClick={() => {
-              handleContactButtonClick();
-            }}
-          >
+          <a href="#contact" onClick={closeMenu}>
             Contact
           </a>
         </li>
