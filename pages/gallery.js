@@ -5,26 +5,31 @@ import Navbar from "../app/components/Navbar";
 const LocationPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  // Grouping images by tags
   const images = [
-    { src: "7 (1).jpg", tags: ["History"] },
-    { src: "7.jpg", tags: ["Village"] },
-    { src: "8 (2).jpg", tags: ["Desert"] },
-    { src: "9 (1).jpg", tags: ["Mountain"] },
-    { src: "10.jpg", tags: ["History"] },
-    { src: "15.jpg", tags: ["Village"] },
-    { src: "16.jpg", tags: ["Desert"] },
-    { src: "17.jpg", tags: ["Mountain"] },
-    { src: "18.jpg", tags: ["History", "Village"] },
-    { src: "19.jpg", tags: ["Desert", "Mountain"] },
-    { src: "20.jpg", tags: ["History"] },
-    { src: "21.jpg", tags: ["Village"] },
-    { src: "22.jpg", tags: ["Village"] },
-    { src: "23.jpg", tags: ["Village"] },
-    { src: "24.jpg", tags: ["Village"] },
+    { src: "7 (1).jpg", tags: ["History"], title: "Sheki Khan Palace" },
+    { src: "7.jpg", tags: ["Village"], title: "Sheki Khan Palace" },
+    { src: "8 (2).jpg", tags: ["Desert"], title: "Three Saints Church" },
+    // Add a title if known
+    { src: "10.jpg", tags: ["History"], title: "Shaki Carevansarai" },
+    { src: "15.jpg", tags: ["Village"], title: "Church of Kish" },
+    { src: "16.jpg", tags: ["History"], title: "Ateshgah" },
+    { src: "17.jpg", tags: ["History"], title: "Ateshgah" },
+    { src: "18.jpg", tags: ["History"], title: "Ateshgah" },
+    { src: "19.jpg", tags: ["History"], title: "Ateshgah" },
+    { src: "20.jpg", tags: ["History"], title: "Diri Baba" },
+    { src: "21.jpg", tags: ["Village"], title: "Diri Baba" },
+    { src: "22.jpg", tags: ["Village"], title: "Lahic" },
+    { src: "23.jpg", tags: ["Village"], title: "Lahic" },
+    { src: "24.jpg", tags: ["Village"], title: "Lahic" },
+    { src: "25.jpg", tags: ["Mountain"], title: "Beshbarmag" },
+    { src: "26.jpg", tags: ["Mountain"], title: "Beshbarmag" },
+    { src: "27.jpg", tags: ["Mountain"], title: "Beshbarmag" },
+    { src: "28.jpg", tags: ["Mountain"], title: "Khinalig" },
+    { src: "29.jpg", tags: ["Mountain"], title: "Khinalig" },
+    { src: "30.jpg", tags: ["Mountain"], title: "Khinalig" },
   ];
 
-  const filters = ["All", "History", "Village", "Desert", "Mountain"];
+  const filters = ["All", "History", "Village", "Mountain"];
 
   // Determine which images to display based on the selected filter
   const filteredImages =
@@ -64,11 +69,10 @@ const LocationPage = () => {
             <div className="card" key={index}>
               <img
                 src={`images/ancient/${image.src}`}
-                alt={`Location ${index + 1}`}
+                alt={image.title}
                 className="card-img"
               />
-              <h2>Location Scouting</h2>
-              <p>Discover stunning locations for your film project.</p>
+              <h2>{image.title}</h2>
             </div>
           ))}
         </div>

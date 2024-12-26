@@ -1,102 +1,101 @@
 .article {
-    max-width: 800px; /* Limit the width for better readability */
-    margin: 20px auto; /* Center the article with space above and below */
-    line-height: 1.8; /* Increase line height for readability */
-    font-size: 1.125rem; /* Adjust font size for better legibility */
-    color: #333; /* Dark gray text for better contrast */
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 20px auto; /* Center the article with space above and below */
+  line-height: 1.8; /* Increase line height for readability */
+  font-size: 1.125rem; /* Adjust font size for better legibility */
+  color: #333; /* Dark gray text for better contrast */
 }
 
 .article h3 {
-    font-size: 1.5rem; /* Subheadings slightly smaller than main heading */
-    margin: 20px 0 10px; /* Add space above and below subheadings */
-    color: #2c3e50; /* Darker color for emphasis */
+  font-size: 1.5rem; /* Subheadings slightly smaller than main heading */
+  margin: 20px 0 10px; /* Add space above and below subheadings */
+  color: #2c3e50; /* Darker color for emphasis */
 }
 
 .article ul {
-    display: block; /* Ensure the list behaves as a block */
-    margin: 10px 0; /* Add vertical spacing for the list */
-    padding: 0; /* Optional: remove extra padding */
+  display: block; /* Ensure the list behaves as a block */
+  margin: 10px 0; /* Add vertical spacing for the list */
+  padding: 0; /* Optional: remove extra padding */
 }
 
 .article ul li {
-    display: block; /* Force each list item to take up the full width */
-    margin: 15px 0; /* Add spacing between items */
-    line-height: 1.6; /* Improve readability */
+  display: block; /* Force each list item to take up the full width */
+  margin: 15px 0; /* Add spacing between items */
+  line-height: 1.6; /* Improve readability */
 }
 
-
 .article p {
-    margin: 10px 0; /* Add spacing between paragraphs */
-    text-align: justify; /* Justify text for a cleaner block look */
+  margin: 10px 0; /* Add spacing between paragraphs */
+  text-align: justify; /* Justify text for a cleaner block look */
 }
 
 .header {
-    text-align: center; /* Center-align text and image */
-    display: flex;
-    flex-direction: column; /* Stack the image and heading vertically */
-    align-items: center; /* Align the content horizontally */
-    justify-content: center; /* Center content vertically */
-    margin: 20px 0; /* Add spacing around the header */
+  text-align: center; /* Center-align text and image */
+  display: flex;
+  flex-direction: column; /* Stack the image and heading vertically */
+  align-items: center; /* Align the content horizontally */
+  justify-content: center; /* Center content vertically */
+  margin: 20px 0; /* Add spacing around the header */
 }
 
 .header h2 {
-    font-size: 2.5rem; /* Adjust size for main heading */
-    margin-bottom: 15px; /* Space below heading */
-    color: #2c3e50; /* Consistent color with subheadings */
-    text-align: center; /* Center the heading text */
+  font-size: 2.5rem; /* Adjust size for main heading */
+  margin-bottom: 15px; /* Space below heading */
+  color: #2c3e50; /* Consistent color with subheadings */
+  text-align: center; /* Center the heading text */
 }
 
 .header img {
-    max-width: 90%; /* Ensure image fits within container */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the image */
-    border-radius: 10px; /* Optional: Add slight rounding for a softer look */
+  max-width: 90%; /* Ensure image fits within container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space below the image */
+  border-radius: 10px; /* Optional: Add slight rounding for a softer look */
 }
 
 /* Media Query for iPhone 14 Pro Max (430px wide) */
 @media only screen and (max-width: 430px) {
-    .header h2 {
-        font-size: 1.75rem; /* Adjust size for smaller screens */
-        margin-bottom: 10px;
-    }
+  .header h2 {
+    font-size: 1.75rem; /* Adjust size for smaller screens */
+    margin-bottom: 10px;
+  }
 
-    .header img {
-        width: 100%; /* Full width on smaller screens */
-        margin-bottom: 15px;
-    }
+  .header img {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .article ul {
-        padding: 0 15px; /* Add padding to ensure spacing on smaller screens */
-    }
+  .article ul {
+    padding: 0 15px; /* Add padding to ensure spacing on smaller screens */
+  }
 
-    .article ul li {
-        margin: 10px 0; /* Adjust spacing between list items */
-        font-size: 1rem; /* Make text slightly smaller */
-        line-height: 1.5; /* Adjust line height */
-    }
+  .article ul li {
+    margin: 10px 0; /* Adjust spacing between list items */
+    font-size: 1rem; /* Make text slightly smaller */
+    line-height: 1.5; /* Adjust line height */
+  }
 }
 /* Media Query for iPhone 14 Pro Max (430px wide) */
 @media only screen and (max-width: 430px) {
-    .article {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-        line-height: 1.6; /* Adjust line height for smaller screens */
-        padding: 0 10px; /* Add padding on smaller screens */
-    }
+  .article {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    line-height: 1.6; /* Adjust line height for smaller screens */
+    padding: 0 10px; /* Add padding on smaller screens */
+  }
 
-    .article h3 {
-        font-size: 1.25rem; /* Slightly smaller subheadings on mobile */
-        margin: 15px 0 8px;
-    }
+  .article h3 {
+    font-size: 1.25rem; /* Slightly smaller subheadings on mobile */
+    margin: 15px 0 8px;
+  }
 
-    .article ul {
-        padding: 0 0px; /* Add padding for very small devices */
-    }
+  .article ul {
+    padding: 0 0px; /* Add padding for very small devices */
+  }
 
-    .article ul li {
-        font-size: 0.9rem; /* Make font smaller for better fit */
-        margin: 8px 0; /* Reduce spacing further */
-        line-height: 1.4; /* Adjust line height for compact design */
-    }
+  .article ul li {
+    font-size: 0.9rem; /* Make font smaller for better fit */
+    margin: 8px 0; /* Reduce spacing further */
+    line-height: 1.4; /* Adjust line height for compact design */
+  }
 }

@@ -2,16 +2,17 @@ import "../app/components/styles/Navbar.css";
 import "../app/components/styles/Locations.css";
 import Link from "next/link";
 import Navbar from "../app/components/Navbar";
+
 const Locations = () => {
   return (
     <>
       <Navbar />
       <section id="locations">
-        <h2 style={{ textAlign: "center" }}>Blogs</h2>
+        <h2>Blogs</h2>
         <div className="locations-container">
-          {/* Card 1: Overlay on the Image */}
-          <Link href="/howtofilm">
-            <div className="location-card">
+          {/* Card 1 */}
+          <div className="location-card">
+            <Link href="/howtofilm">
               <img
                 src="/images/Ateshgah (15).jpg"
                 alt="Rich Cultural Heritage"
@@ -21,12 +22,12 @@ const Locations = () => {
                   How to Film in the Land of Fire
                 </h3>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          {/* Card 2: Content Below the Image */}
-          <Link href="/petroglygps">
-            <div className="location-card">
+          {/* Card 2 */}
+          <div className="location-card">
+            <Link href="/petroglygps">
               <img src="/images/land.JPG" alt="Cost-effective Filming" />
               <div className="overlay">
                 <h3 style={{ color: "white" }}>
@@ -34,12 +35,12 @@ const Locations = () => {
                   Landscapes
                 </h3>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          {/* Card 3: Overlay on the Image */}
-          <Link href="/tenbestfilming">
-            <div className="location-card">
+          {/* Card 3 */}
+          <div className="location-card">
+            <Link href="/tenbestfilming">
               <img
                 src="/images/Khinalig (12) (1).jpg"
                 alt="Diverse and Unique Locations"
@@ -49,11 +50,10 @@ const Locations = () => {
                   10 Best Filming Locations in Azerbaijan
                 </h3>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          {/* Card 4: Content Below the Image */}
-
+          {/* Card 4 */}
           <div className="location-card">
             <Link href="/spotlight">
               <img
