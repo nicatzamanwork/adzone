@@ -80,7 +80,7 @@ const Blog = () => {
           {/* Service 2 */}
           <div className="service-box">
             <img
-              src="/images/scouting.jpg"
+              src="/images/Ateshgah.jpg"
               alt="Logistic support"
               className="service-image"
             />
