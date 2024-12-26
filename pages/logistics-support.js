@@ -11,7 +11,7 @@ const Blog = () => {
       <Navbar />
       <header
         className="header"
-        style={{ backgroundImage: `url('/images/Ateshgah.jpg')` }}
+        style={{ backgroundImage: `url('/images/scouting.jpg')` }}
       >
         <div className="header-overlay">
           <div className="header-content">
