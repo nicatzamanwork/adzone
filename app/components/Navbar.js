@@ -16,6 +16,11 @@ const Navbar = () => {
     window.location.href = "/#contact"; // Navigate to the home page with the contact section
   };
 
+  const handleContactButtonClick = (e) => {
+    closeMenu(); // Close the menu
+    handleContactClick(e); // Navigate to the contact section
+  };
+
   return (
     <nav>
       {/* Checkbox for toggling the menu */}
@@ -64,7 +69,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="contact-button-mobile">
-          <a href="#contact" onClick={() => { closeMenu(); handleContactClick(); }}>
+          <a
+            href="#contact"
+            onClick={() => {
+              handleContactButtonClick();
+            }}
+          >
             Contact
           </a>
         </li>
