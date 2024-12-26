@@ -84,30 +84,6 @@ const Blog = () => {
             flexWrap: "wrap",
           }}
         >
-          {/* Service 1 */}
-          <div
-            className="service-box"
-            style={{
-              flex: "1",
-              maxWidth: "400px",
-              textAlign: "center",
-              background: "#fff",
-              borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              overflow: "hidden",
-            }}
-          >
-            <img
-              src="/images/Ateshgah.jpg"
-              alt="Location Scouting"
-              style={{ width: "100%", height: "200px", objectFit: "cover" }}
-            />
-            <div style={{ padding: "1rem" }}>
-              <h3>Location Scouting</h3>
-              <p>Discover stunning locations for your next project.</p>
-            </div>
-          </div>
-
           {/* Service 2 */}
           <div
             className="service-box"

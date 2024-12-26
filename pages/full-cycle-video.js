@@ -3,6 +3,7 @@ import Navbar from "../app/components/Navbar"; // Ensure the Navbar is imported
 import Contact from "../app/components/Contact";
 import "../app/components/styles/Blog.css";
 import "../pages/full-cycle.css";
+import "../app/components/styles/Services.css";
 
 const Blog = () => {
   return (
@@ -15,7 +16,7 @@ const Blog = () => {
       >
         <div className="header-overlay">
           <div className="header-content">
-            <h1>Location Scouting</h1>
+            <h1>Full Cycle Production</h1>
             <p>Your Next Film Destination</p>
           </div>
         </div>
@@ -30,7 +31,6 @@ const Blog = () => {
         </div>
 
         <div className="service-section">
-          <div className="icon-placeholder">(Тут должна быть иконка)</div>
           <h2>Pre-production service</h2>
           <ul className="stacked-list">
             <li>
@@ -71,7 +71,6 @@ const Blog = () => {
         </div>
 
         <div>
-          <div className="icon-placeholder">(Тут должна быть иконка)</div>
           <h2>Production service</h2>
           <ul className="stacked-list">
             <li>
@@ -93,7 +92,6 @@ const Blog = () => {
         </div>
 
         <div className="service-section">
-          <div className="icon-placeholder">(Тут должна быть иконка)</div>
           <h2>Post-Production Services</h2>
           <ul className="stacked-list">
             <li>
@@ -102,6 +100,53 @@ const Blog = () => {
               aligns with your vision.
             </li>
           </ul>
+        </div>
+        {/* Service 2 */}
+        <div
+          className="service-box"
+          style={{
+            flex: "1",
+            maxWidth: "400px",
+            textAlign: "center",
+            background: "#fff",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src="/images/scouting.jpg"
+            alt="Logistics Support"
+            style={{ width: "100%", height: "200px", objectFit: "cover" }}
+          />
+          <div style={{ padding: "1rem" }}>
+            <h3>Logistics Support</h3>
+            <p>We help you with expert planning and execution.</p>
+          </div>
+        </div>
+
+        {/* Service 3 */}
+        <div
+          className="service-box"
+          style={{
+            flex: "1",
+            maxWidth: "400px",
+            textAlign: "center",
+            background: "#fff",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            overflow: "hidden",
+          }}
+        >
+          <img
+            src="/images/fullscale.jpg"
+            alt="Full-Cycle Video Production"
+            style={{ width: "100%", height: "200px", objectFit: "cover" }}
+          />
+          <div style={{ padding: "1rem" }}>
+            <h3>Full-Cycle Video Production</h3>
+            <p>From pre-production to post-production support.</p>
+          </div>
         </div>
         <Contact />
       </div>

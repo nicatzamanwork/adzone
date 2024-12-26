@@ -48,7 +48,9 @@
     align-items: center;
     gap: 1rem;
   }
-
+  .service-box {
+    display: grid;
+  }
   .services-content {
     text-align: center;
     max-width: 100%;
