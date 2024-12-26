@@ -6,14 +6,10 @@ import "../components/styles/Navbar.css";
 import Link from "next/link"; // Import Next.js Link component
 
 const Navbar = () => {
-  // Function to close the menu
   const closeMenu = () => {
     const checkBox = document.getElementById("check");
-    if (checkBox) checkBox.checked = false;
+    checkBox.checked = false;
   };
-
-  // Function to handle Contact navigation
-
 
   return (
     <nav>
@@ -31,7 +27,7 @@ const Navbar = () => {
       </label>
 
       {/* Navigation links */}
-      <ul>
+      <ul style={{ zIndex: 5 }}>
         <li>
           <a href="/#locations" onClick={closeMenu}>
             Azerbaijan
@@ -73,7 +69,13 @@ const Navbar = () => {
         <LanguageSelector />
       </li>
       <li className="contact-button">
-        <a href="#contact" onClick={handleContactClick}>
+        <a
+          href="#contact"
+          onClick={(e) => {
+            e.preventDefault(); // Prevent default anchor behavior
+            window.location.href = "/#contact"; // Navigate to the home page with the contact section
+          }}
+        >
           Contact
         </a>
       </li>
