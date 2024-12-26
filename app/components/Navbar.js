@@ -4,11 +4,8 @@ import React from "react";
 import LanguageSelector from "./LanguageDropDown";
 import "../components/styles/Navbar.css";
 import Link from "next/link"; // Import Next.js Link component
-import { useRouter } from "next/router"; // Import Next.js router
 
 const Navbar = () => {
-  const router = useRouter();
-
   // Function to close the menu
   const closeMenu = () => {
     const checkBox = document.getElementById("check");
@@ -19,7 +16,7 @@ const Navbar = () => {
   const handleContactClick = (event) => {
     event.preventDefault(); // Prevent default anchor behavior
     closeMenu(); // Close the menu
-    router.push("/#contact"); // Navigate to the contact section on the homepage
+    window.location.href = "/#contact"; // Navigate to the contact section on the homepage
   };
 
   return (
