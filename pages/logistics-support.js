@@ -74,57 +74,28 @@ const Blog = () => {
         >
           End-to-End Support for International Productions
         </h2>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            gap: "5rem",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className="service-boxes-container">
           {/* Service 2 */}
-          <div
-            className="service-box"
-            style={{
-              flex: "1",
-              maxWidth: "400px",
-              textAlign: "center",
-              background: "#fff",
-              borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              overflow: "hidden",
-            }}
-          >
+          <div className="service-box">
             <img
               src="/images/scouting.jpg"
-              alt="Logistics Support"
-              style={{ width: "100%", height: "200px", objectFit: "cover" }}
+              alt="Location Scouting"
+              className="service-image"
             />
-            <div style={{ padding: "1rem" }}>
-              <h3>Logistics Support</h3>
-              <p>We help you with expert planning and execution.</p>
+            <div className="service-content">
+              <h3>Location Scouting</h3>
+              <p>Discover stunning locations for your next project.</p>
             </div>
           </div>
 
           {/* Service 3 */}
-          <div
-            className="service-box"
-            style={{
-              flex: "1",
-              maxWidth: "400px",
-              textAlign: "center",
-              background: "#fff",
-              borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              overflow: "hidden",
-            }}
-          >
+          <div className="service-box">
             <img
               src="/images/fullscale.jpg"
               alt="Full-Cycle Video Production"
-              style={{ width: "100%", height: "200px", objectFit: "cover" }}
+              className="service-image"
             />
-            <div style={{ padding: "1rem" }}>
+            <div className="service-content">
               <h3>Full-Cycle Video Production</h3>
               <p>From pre-production to post-production support.</p>
             </div>
