@@ -15,7 +15,7 @@ const Petroglyphs = () => {
               Landscapes
             </h2>
             <Image
-              src="/images/land.jpg"
+              src="/images/land.JPG"
               alt="Rich Cultural Heritage"
               width={800}
               height={450}
