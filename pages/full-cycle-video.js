@@ -101,51 +101,31 @@ const Blog = () => {
             </li>
           </ul>
         </div>
-        {/* Service 2 */}
-        <div
-          className="service-box"
-          style={{
-            flex: "1",
-            maxWidth: "400px",
-            textAlign: "center",
-            background: "#fff",
-            borderRadius: "8px",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-            overflow: "hidden",
-          }}
-        >
-          <img
-            src="/images/scouting.jpg"
-            alt="Logistics Support"
-            style={{ width: "100%", height: "200px", objectFit: "cover" }}
-          />
-          <div style={{ padding: "1rem" }}>
-            <h3>Logistics Support</h3>
-            <p>We help you with expert planning and execution.</p>
+        <div className="service-boxes-container">
+          {/* Service 2 */}
+          <div className="service-box">
+            <img
+              src="/images/scouting.jpg"
+              alt="Logistics Support"
+              className="service-image"
+            />
+            <div className="service-content">
+              <h3>Logistics Support</h3>
+              <p>We help you with expert planning and execution.</p>
+            </div>
           </div>
-        </div>
 
-        {/* Service 3 */}
-        <div
-          className="service-box"
-          style={{
-            flex: "1",
-            maxWidth: "400px",
-            textAlign: "center",
-            background: "#fff",
-            borderRadius: "8px",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-            overflow: "hidden",
-          }}
-        >
-          <img
-            src="/images/fullscale.jpg"
-            alt="Full-Cycle Video Production"
-            style={{ width: "100%", height: "200px", objectFit: "cover" }}
-          />
-          <div style={{ padding: "1rem" }}>
-            <h3>Full-Cycle Video Production</h3>
-            <p>From pre-production to post-production support.</p>
+          {/* Service 3 */}
+          <div className="service-box">
+            <img
+              src="/images/fullscale.jpg"
+              alt="Full-Cycle Video Production"
+              className="service-image"
+            />
+            <div className="service-content">
+              <h3>Full-Cycle Video Production</h3>
+              <p>From pre-production to post-production support.</p>
+            </div>
           </div>
         </div>
         <Contact />
