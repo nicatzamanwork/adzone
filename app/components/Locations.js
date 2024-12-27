@@ -4,8 +4,10 @@ import Link from "next/link";
 const Locations = () => {
   return (
     <section id="locations">
-      <h5 className="about-subtitle">YOUR VISION, OUR EXPERTISE</h5>
-      <h2>Discover Our Stunning Film Locations</h2>
+      <h5 className="about-subtitle">WHY AZERBAIJAN</h5>
+      <h2>
+        Experience diverse landscapes and rich culture for your next project
+      </h2>
       <div className="locations-container">
         {/* Card 1: Overlay on the Image */}
         <div className="location-card">

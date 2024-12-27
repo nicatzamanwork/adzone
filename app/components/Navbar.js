@@ -30,7 +30,9 @@ const Navbar = () => {
 
       {/* Logo */}
       <label className="logo">
+        <a href="">
         <img className="logo" src="/images/logo.png" alt="Logo" />
+       </a>
       </label>
 
       {/* Navigation links */}
