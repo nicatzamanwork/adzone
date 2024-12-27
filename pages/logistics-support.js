@@ -76,30 +76,34 @@ const Blog = () => {
         </h2>
         <div className="service-boxes-container">
           {/* Service 2 */}
-          <div className="service-box">
-            <img
-              src="/images/Ateshgah.jpg"
-              alt="Location Scouting"
-              className="service-image"
-            />
-            <div className="service-content">
-              <h3>Location Scouting</h3>
-              <p>Discover stunning locations for your next project.</p>
+          <Link href="/location-scouting">
+            <div className="service-box">
+              <img
+                src="/images/Ateshgah.jpg"
+                alt="Location Scouting"
+                className="service-image"
+              />
+              <div className="service-content">
+                <h3>Location Scouting</h3>
+                <p>Discover stunning locations for your next project.</p>
+              </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 3 */}
-          <div className="service-box">
-            <img
-              src="/images/fullscale.jpg"
-              alt="Full-Cycle Video Production"
-              className="service-image"
-            />
-            <div className="service-content">
-              <h3>Full-Cycle Video Production</h3>
-              <p>From pre-production to post-production support.</p>
+          <Link href="/full-cycle-video">
+            <div className="service-box">
+              <img
+                src="/images/fullscale.jpg"
+                alt="Full-Cycle Video Production"
+                className="service-image"
+              />
+              <div className="service-content">
+                <h3>Full-Cycle Video Production</h3>
+                <p>From pre-production to post-production support.</p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <Contact />
       </section>

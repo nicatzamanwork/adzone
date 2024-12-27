@@ -4,6 +4,7 @@ import Contact from "../app/components/Contact";
 import "../app/components/styles/Blog.css";
 import "../pages/full-cycle.css";
 import "../app/components/styles/Services.css";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -103,19 +104,22 @@ const Blog = () => {
         </div>
         <div className="service-boxes-container">
           {/* Service 2 */}
-          <div className="service-box">
-            <img
-              src="/images/Ateshgah.jpg"
-              alt="Location Scouting"
-              className="service-image"
-            />
-            <div className="service-content">
-              <h3>Location Scouting</h3>
-              <p>Discover stunning locations for your next project.</p>
+          <Link href="/location-scouting">
+            <div className="service-box">
+              <img
+                src="/images/Ateshgah.jpg"
+                alt="Location Scouting"
+                className="service-image"
+              />
+              <div className="service-content">
+                <h3>Location Scouting</h3>
+                <p>Discover stunning locations for your next project.</p>
+              </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 3 */}
+          <Link href="/logistics-support">
           <div className="service-box">
             <img src="/images/scouting.jpg" alt="" className="service-image" />
             <div className="service-content">
@@ -123,6 +127,7 @@ const Blog = () => {
               <p>We help you with expert planning and execution.</p>
             </div>
           </div>
+          </Link>
         </div>
         <Contact />
       </div>
