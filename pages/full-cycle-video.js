@@ -12,7 +12,7 @@ const Blog = () => {
 
       <header
         className="header"
-        style={{ backgroundImage: `url('/images/Ateshgah.jpg')` }}
+        style={{ backgroundImage: `url('/images/fullscale.jpg')` }}
       >
         <div className="header-overlay">
           <div className="header-content">
