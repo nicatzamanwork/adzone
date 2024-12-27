@@ -154,7 +154,6 @@ const Petroglyphs = () => {
               </li>
             </ul>
 
-            <h3>5. Nohur Lake</h3>
             <h2>A Welcoming Destination for Filmmakers</h2>
             <p>
               Azerbaijan’s government has embraced its cinematic potential,
