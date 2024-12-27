@@ -4,6 +4,7 @@ import Contact from "../app/components/Contact";
 import "../app/components/styles/About.css";
 import "../app/components/styles/Blog.css";
 import "../app/components/styles/Services.css";
+import Link from "next/link";
 
 const Blog = () => {
   return (
