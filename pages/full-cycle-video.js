@@ -18,7 +18,7 @@ const Blog = () => {
         <div className="header-overlay">
           <div className="header-content">
             <h1>Full-Cycle Video Production</h1>
-            <p>Your Next Film Destination</p>
+       
           </div>
         </div>
       </header>

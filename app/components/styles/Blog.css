@@ -27,7 +27,7 @@
   }
   
   .header-content {
-    padding-left: 50px; /* Adds space from the left side */
+    padding-left: 2rem; /* Adds space from the left side */
     color: #fff;
     text-align: left;
     position: relative;

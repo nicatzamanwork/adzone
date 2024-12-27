@@ -16,7 +16,7 @@ const Blog = () => {
         <div className="header-overlay">
           <div className="header-content">
             <h1>Location Scouting</h1>
-            <p>Your Next Film Destination</p>
+       
           </div>
         </div>
       </header>
