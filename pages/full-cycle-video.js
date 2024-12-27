@@ -105,7 +105,7 @@ const Blog = () => {
           {/* Service 2 */}
           <div className="service-box">
             <img
-              src="/images/scouting.jpg"
+              src="/images/Ateshgah.jpg"
               alt="Location Scouting"
               className="service-image"
             />
@@ -117,7 +117,7 @@ const Blog = () => {
 
           {/* Service 3 */}
           <div className="service-box">
-            <img src="/images/fullscale.jpg" alt="" className="service-image" />
+            <img src="/images/scouting.jpg" alt="" className="service-image" />
             <div className="service-content">
               <h3>Logistics Support</h3>
               <p>We help you with expert planning and execution.</p>
