@@ -5,26 +5,26 @@ import Link from "next/link";
 export default function GalleryMain() {
   const cards = [
     {
-      title: "Mountain",
+      title: "Urban",
       description: "Discover stunning mountain escapes for your project.",
       image: "/images/Khinalig (12) (1).jpg",
       link: "/gallery",
     },
     {
-      title: "Desert",
+      title: "Europe",
       description: "Find beautiful beaches perfect for your next shoot.",
       image: "/images/Mud volcanoes (14).jpg",
       link: "/gallery",
     },
 
     {
-      title: "Forest",
+      title: "Nature",
       description: "Experience serene forest locations for your scenes.",
       image: "/images/Khinalig (21).jpg",
       link: "/gallery",
     },
     {
-      title: "Urban",
+      title: "Ancient",
       description: "Capture the energy of vibrant urban locations.",
       image: "/images/7 (1).jpg",
       link: "/gallery",
