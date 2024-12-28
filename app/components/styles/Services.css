@@ -87,11 +87,11 @@
 
   .services-title {
     font-size: 1.8rem;
-    text-align: center;
+    text-align: left;
   }
 
   .about-subtitle {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -105,12 +105,12 @@
   .services-title {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
   }
 
   .about-subtitle {
     font-size: 0.9rem;
-    text-align: center;
+    text-align: left;
   }
 
   .service-content h3 {
@@ -130,6 +130,7 @@
 
   .services-title {
     font-size: 1.3rem;
+    text-align: left;
   }
 
   .service-content h3 {
