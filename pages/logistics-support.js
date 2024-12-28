@@ -55,13 +55,6 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        <div className="services-image">
-          <img
-            src="images/logisticSupport.jpeg"
-            alt="Logistics Support"
-            className="services-image-content"
-          />
-        </div>
       </section>
 
       <section id="services" style={{ background: "#f9f9f9", padding: "2rem" }}>

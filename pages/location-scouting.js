@@ -4,6 +4,7 @@ import Contact from "../app/components/Contact"; // Ensure the Navbar is importe
 import "../app/components/styles/About.css";
 import "../app/components/styles/Blog.css";
 import "../app/components/styles/Services.css";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -16,7 +17,6 @@ const Blog = () => {
         <div className="header-overlay">
           <div className="header-content">
             <h1>Location Scouting</h1>
-       
           </div>
         </div>
       </header>
@@ -57,13 +57,6 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        <div className="services-image">
-          <img
-            src="images/logisticSupport.jpeg"
-            alt="Office Environment"
-            className="services-image-content"
-          />
-        </div>
       </section>
 
       <section id="services" style={{ background: "#f9f9f9", padding: "2rem" }}>
@@ -78,30 +71,34 @@ const Blog = () => {
         </h2>
         <div className="service-boxes-container">
           {/* Service 2 */}
-          <div className="service-box">
-            <img
-              src="/images/scouting.jpg"
-              alt="Logistic support"
-              className="service-image"
-            />
-            <div className="service-content">
-              <h3>Logistics Support</h3>
-              <p>We help you with expert planning and execution.</p>
+          <Link href="/location-scouting">
+            <div className="service-box">
+              <img
+                src="/images/scouting.jpg"
+                alt="Logistic support"
+                className="service-image"
+              />
+              <div className="service-content">
+                <h3>Logistics Support</h3>
+                <p>We help you with expert planning and execution.</p>
+              </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 3 */}
-          <div className="service-box">
-            <img
-              src="/images/fullscale.jpg"
-              alt="Full-Cycle Video Production"
-              className="service-image"
-            />
-            <div className="service-content">
-              <h3>Full-Cycle Video Production</h3>
-              <p>From pre-production to post-production support.</p>
+          <Link href="/location-scouting">
+            <div className="service-box">
+              <img
+                src="/images/fullscale.jpg"
+                alt="Full-Cycle Video Production"
+                className="service-image"
+              />
+              <div className="service-content">
+                <h3>Full-Cycle Video Production</h3>
+                <p>From pre-production to post-production support.</p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <Contact />
       </section>

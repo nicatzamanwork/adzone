@@ -40,7 +40,7 @@ export default function GalleryMain() {
       <div className="location-page">
         {/* Header Section */}
         <header className="header">
-          <h1 className="title">Locatioons</h1>
+          <h1 className="title">Locations</h1>
         </header>
 
         {/* Cards Section */}

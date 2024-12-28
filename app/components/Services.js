@@ -3,119 +3,75 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section id="services" style={{ background: "#f9f9f9", padding: "0rem" }}>
+    <section id="services" className="services-section">
       <h5 className="about-subtitle">YOUR VISION, OUR EXPERTISE</h5>
-      <h2
-        style={{
-          textAlign: "left",
-          fontSize: "2rem",
-          marginBottom: "2rem",
-          padding: "32px",
-        }}
-      >
+      <h2 className="services-title">
         We provide end-to-end support for international film productions in
         Azerbaijan
       </h2>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          gap: "1rem",
-          flexWrap: "wrap",
-        }}
-      >
+      <div className="service-boxes-container">
         {/* Service 1 */}
         <Link href="/location-scouting" passHref>
-          <div
-            className="service-box"
-            style={{
-              flex: "1",
-              maxWidth: "350px",
-              textAlign: "left",
-              background: "#fff",
-              borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              overflow: "hidden",
-              textDecoration: "none",
-            }}
-          >
+          <div className="service-box">
             <img
               src="/images/Ateshgah.jpg"
               alt="Location Scouting"
-              style={{ width: "100%", height: "200px", objectFit: "cover" }}
+              className="service-image"
             />
-            <div style={{ padding: "1rem" }}>
-              <h3 style={{ color: "black" }}>
+            <div className="service-content">
+              <h3>
                 Location Scouting{" "}
-                <img src="images/arrow.png" style={{ width: "15px" }} />
+                <img
+                  src="/images/arrow.png"
+                  alt="Arrow"
+                  className="arrow-icon"
+                />
               </h3>
-              <p style={{ color: "black" }}>
-                Discover stunning locations for your next project.
-              </p>
+              <p>Discover stunning locations for your next project.</p>
             </div>
           </div>
         </Link>
 
         {/* Service 2 */}
         <Link href="/logistics-support" passHref>
-          <div
-            className="service-box"
-            style={{
-              flex: "1",
-              maxWidth: "350px",
-              textAlign: "left",
-              background: "#fff",
-              borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              overflow: "hidden",
-              textDecoration: "none",
-            }}
-          >
+          <div className="service-box">
             <img
               src="/images/scouting.jpg"
               alt="Logistics Support"
-              style={{ width: "100%", height: "200px", objectFit: "cover" }}
+              className="service-image"
             />
-            <div style={{ padding: "1rem" }}>
-              <h3 style={{ color: "black" }}>
+            <div className="service-content">
+              <h3>
                 Logistics Support{" "}
-                <img src="images/arrow.png" style={{ width: "15px" }} />
+                <img
+                  src="/images/arrow.png"
+                  alt="Arrow"
+                  className="arrow-icon"
+                />
               </h3>
-              <p style={{ color: "black" }}>
-                We help you with expert planning and execution.
-              </p>
+              <p>We help you with expert planning and execution.</p>
             </div>
           </div>
         </Link>
 
         {/* Service 3 */}
         <Link href="/full-cycle-video" passHref>
-          <div
-            className="service-box"
-            style={{
-              flex: "1",
-              maxWidth: "350px",
-              textAlign: "left",
-              background: "#fff",
-              borderRadius: "8px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              overflow: "hidden",
-              textDecoration: "none",
-            }}
-          >
+          <div className="service-box">
             <img
               src="/images/fullscale.jpg"
               alt="Full-Cycle Video Production"
-              style={{ width: "100%", height: "200px", objectFit: "cover" }}
+              className="service-image"
             />
-            <div style={{ padding: "1rem" }}>
-              <h3 style={{ color: "black" }}>
+            <div className="service-content">
+              <h3>
                 Full-Cycle Video Production{" "}
-                <img src="images/arrow.png" style={{ width: "15px" }} />
+                <img
+                  src="/images/arrow.png"
+                  alt="Arrow"
+                  className="arrow-icon"
+                />
               </h3>
-              <p style={{ color: "black" }}>
-                From pre-production to post-production support.
-              </p>
+              <p>From pre-production to post-production support.</p>
             </div>
           </div>
         </Link>

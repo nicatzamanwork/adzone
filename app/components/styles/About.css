@@ -73,7 +73,7 @@
   }
 
   .about-content {
-    text-align: center; /* Center the text on mobile */
+    text-align: left; /* Center the text on mobile */
     max-width: 100%; /* Remove max-width to utilize full screen width */
   }
 
@@ -83,11 +83,13 @@
   }
 
   .about-title {
+    text-align: left;
     font-size: 1.8rem; /* Adjust title size for smaller screens */
     margin-bottom: 1rem;
   }
 
   .about-description {
+    text-align: left;
     font-size: 0.9rem; /* Adjust description font size */
     margin-bottom: 1.5rem;
   }
