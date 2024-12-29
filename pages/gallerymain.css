@@ -6,8 +6,6 @@ body {
 
 /* Location Page Styling */
 .location-page {
-  padding: 1rem;
-  max-width: 1200px; /* Center the content with max-width */
   margin: 0 auto;
 }
 
