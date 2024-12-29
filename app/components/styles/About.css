@@ -65,15 +65,16 @@
 }
 
 /* Responsive adjustments for iPhone 14 Pro Max */
+/* Responsive adjustments for iPhone 14 Pro Max */
 @media (max-width: 430px) {
   .about {
-    flex-direction: column; /* Stack content vertically on small screens */
+    flex-direction: column-reverse; /* Reverse the order of content and image */
     padding: 2rem 1rem; /* Adjust padding */
     gap: 1rem;
   }
 
   .about-content {
-    text-align: left; /* Center the text on mobile */
+    text-align: left; /* Align the text to the left */
     max-width: 100%; /* Remove max-width to utilize full screen width */
   }
 
@@ -100,7 +101,7 @@
 
   .about-image {
     width: 100%; /* Ensure image takes full width */
-    margin-top: 1rem; /* Add some space above the image */
+    margin-bottom: 1rem; /* Add space below the image */
   }
 
   .about-image img {

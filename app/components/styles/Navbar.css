@@ -11,7 +11,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
+  padding: 16px 30px;
   position: relative; /* Ensure it stays in its context */
   z-index: 1000; /* Prevent overlapping issues */
 }
@@ -91,6 +91,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   nav {
     align-items: flex-start;
+    padding: 16px 20px;
   }
 
   .checkbtn {
