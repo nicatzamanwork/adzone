@@ -7,7 +7,6 @@ body {
 /* Container Styling */
 .location-page {
   text-align: center;
-  padding: 0 1rem; /* Add padding for small screens */
 }
 
 /* Header Section */
@@ -107,9 +106,5 @@ body {
 
   .filter-btn {
     padding: 0.25rem 0.5rem; /* Smaller buttons */
-  }
-
-  .card {
-    padding: 0.5rem; /* Reduce card padding */
   }
 }

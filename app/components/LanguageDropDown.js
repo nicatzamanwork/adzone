@@ -10,7 +10,6 @@ const LanguageSelector = () => {
 
   const languages = [
     { code: "en", icon: "/images/gb.svg" },
-    { code: "az", icon: "/images/az.svg" },
     { code: "ru", icon: "/images/ru.svg" },
   ];
 
