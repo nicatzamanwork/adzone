@@ -30,7 +30,7 @@ const Navbar = () => {
 
       {/* Logo */}
       <label className="logo">
-        <a href="">
+        <a href="/#home">
           <img className="logo" src="/images/logo.png" alt="Logo" />
         </a>
       </label>

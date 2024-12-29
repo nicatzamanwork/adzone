@@ -70,7 +70,7 @@
 /* Individual Card Styling */
 .service-box {
   background-color: #fff;
-  border-radius: 8px;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   flex: 1 1 calc(33.33% - 2rem); /* Three cards per row */

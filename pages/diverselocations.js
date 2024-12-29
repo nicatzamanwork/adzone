@@ -21,14 +21,14 @@ const About = () => {
             genres.
           </p>
           <a
-            href="#contact"
+            href="/gallerymain"
             className="about-link"
             onClick={(e) => {
               e.preventDefault(); // Prevent default anchor behavior
-              window.location.href = "/#contact"; // Navigate to the home page with the contact section
+              window.location.href = "/gallerymain"; // Navigate to the home page with the contact section
             }}
           >
-            Get in touch
+            Catalog
           </a>
         </div>
         <div className="about-image">

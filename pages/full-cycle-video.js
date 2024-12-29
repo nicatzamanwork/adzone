@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../app/components/Navbar"; // Ensure the Navbar is imported
 import Contact from "../app/components/Contact";
-import InternalServiceLogistic from "../app/components/InternalServicesLogistic";
+import InternalServiceFullCycle from "../app/components/InternalServicesFullCycle";
 import "../app/components/styles/About.css";
 import "../app/components/styles/Blog.css";
 import "../app/components/styles/Services.css";
@@ -16,7 +16,7 @@ const Blog = () => {
       >
         <div className="header-overlay">
           <div className="header-content">
-            <h1>Logistic Support</h1>
+            <h1>Full-cycle Production</h1>
           </div>
         </div>
       </header>
@@ -117,7 +117,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-      <InternalServiceLogistic />
+      <InternalServiceFullCycle />
       <Contact />
     </>
   );

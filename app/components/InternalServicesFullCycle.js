@@ -11,8 +11,8 @@ export default function GalleryMain() {
     {
       title: "Logistc Support",
       description: "Capture the energy of vibrant urban locations.",
-      image: "/images/fullscale.jpg",
-      link: "/full-cycle-video",
+      image: "/images/scouting.jpg",
+      link: "/logistics-support",
     },
   ];
 
