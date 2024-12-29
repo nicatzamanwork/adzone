@@ -64,7 +64,7 @@ const Services = () => {
             />
             <div className="service-content">
               <h3>
-                Full-Cycle Video Production{" "}
+                Full-Cycle Production{" "}
                 <img
                   src="/images/arrow.png"
                   alt="Arrow"

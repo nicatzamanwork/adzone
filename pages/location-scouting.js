@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../app/components/Navbar";
 import Contact from "../app/components/Contact";
+import InternalServiceLocation from "../app/components/InternalServicesLocation";
 
 const InternalService = () => {
   return (
@@ -59,6 +60,7 @@ const InternalService = () => {
           </div>
         </div>
       </section>
+      <InternalServiceLocation />
       <Contact />
       <style jsx>{`
         /* Header Styling */
@@ -91,8 +93,8 @@ const InternalService = () => {
 
         /* Services Section */
         .internal-services-section {
-          padding: 4rem 2rem;
-          background: #f9f9f9;
+          padding: 4rem 25rem;
+          background: white;
           text-align: center;
         }
 
@@ -129,6 +131,12 @@ const InternalService = () => {
         @media (max-width: 768px) {
           .internal-header-content h1 {
             font-size: 2rem;
+          }
+          /* Services Section */
+          .internal-services-section {
+            padding: 4rem 2rem;
+            background: white;
+            text-align: center;
           }
 
           .internal-service-icon {

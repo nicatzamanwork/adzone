@@ -8,7 +8,7 @@ import Link from "next/link"; // Import Next.js Link component
 const Navbar = () => {
   const closeMenu = () => {
     const checkBox = document.getElementById("check");
-    checkBox.checked = false;
+    if (checkBox) checkBox.checked = false;
   };
 
   // Function to handle Contact navigation
@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="navbar">
       {/* Checkbox for toggling the menu */}
       <input type="checkbox" id="check" />
 
@@ -31,12 +31,12 @@ const Navbar = () => {
       {/* Logo */}
       <label className="logo">
         <a href="">
-        <img className="logo" src="/images/logo.png" alt="Logo" />
-       </a>
+          <img className="logo" src="/images/logo.png" alt="Logo" />
+        </a>
       </label>
 
       {/* Navigation links */}
-      <ul style={{ zIndex: 5 }}>
+      <ul className="navbar-list">
         <li>
           <a href="/#locations" onClick={closeMenu}>
             Azerbaijan

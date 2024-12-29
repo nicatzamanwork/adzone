@@ -1,3 +1,4 @@
+/* General Reset */
 body {
   margin: 0;
   padding: 0;
@@ -11,33 +12,36 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 16px 20px;
+  position: relative; /* Ensure it stays in its context */
+  z-index: 1000; /* Prevent overlapping issues */
 }
 
 .logo img {
   height: 40px; /* Adjust the logo size */
 }
 
-ul {
+nav ul {
   margin-left: 8%;
-  z-index: 1;
   display: flex;
   list-style: none;
   padding: 0;
   flex: 1;
   justify-content: center; /* Center the nav links */
+  position: relative; /* Keep in context */
+  z-index: 10;
 }
 
-ul li {
+nav ul li {
   margin-right: 20px;
 }
 
-ul li a {
+nav ul li a {
   color: #4f4f4f;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   color: #f00303;
 }
 
@@ -57,18 +61,17 @@ ul li a:hover {
   display: none; /* Hidden by default */
 }
 
-/* Style for Contact button */
+/* Contact Button */
 .contact-button {
   margin-left: 30px; /* Space between Contact button and other navigation items */
   display: block;
 }
 
-/* Mobile contact button */
+/* Mobile Contact Button */
 .contact-button-mobile {
   display: none; /* Hidden by default */
 }
 
-/* Style for Contact button link */
 .contact-button a {
   background-color: white; /* White background */
   color: black; /* Black text color */
@@ -84,23 +87,22 @@ ul li a:hover {
   color: white; /* Change text color to white on hover */
 }
 
-/* Media queries for mobile responsiveness */
+/* Mobile Styles */
 @media (max-width: 768px) {
   nav {
     align-items: flex-start;
   }
 
-  /* Display hamburger menu icon */
   .checkbtn {
     display: block;
     order: 1;
     margin-right: 20px;
   }
 
-  ul {
-    position: fixed;
+  nav ul {
+    position: fixed; /* Ensure it stays within the viewport */
     top: 50px;
-    right: -100%;
+    right: -100%; /* Hidden initially */
     background-color: #ffffff;
     width: 100%;
     height: 100vh;
@@ -109,23 +111,23 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
+    z-index: 1000;
   }
 
-  ul li {
+  nav ul li {
     display: flex;
     align-items: center;
     margin: 20px 0;
   }
 
-  ul li a {
+  nav ul li a {
     font-size: 20px;
   }
 
   #check:checked ~ ul {
-    right: 0;
+    right: 0; /* Slide in the menu */
   }
 
-  /* Hide contact button and show mobile contact button on mobile */
   .contact-button {
     display: none; /* Hide on mobile */
   }
@@ -135,7 +137,7 @@ ul li a:hover {
   }
 }
 
-/* Desktop view: Hide mobile contact button and show desktop contact button */
+/* Desktop Styles */
 @media (min-width: 769px) {
   .contact-button {
     display: block; /* Show on desktop */

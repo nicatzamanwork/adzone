@@ -83,7 +83,7 @@ const LocationPage = () => {
                 alt={image.title}
                 className="card-img"
               />
-              <h2>{image.title}</h2>
+              {/* <h2>{image.title}</h2> */}
             </div>
           ))}
         </div>
@@ -100,7 +100,7 @@ const LocationPage = () => {
                 alt={selectedImage.title}
                 className="modal-img"
               />
-              <h2>{selectedImage.title}</h2>
+              {/* <h2>{selectedImage.title}</h2> */}
             </div>
           </div>
         )}
@@ -121,7 +121,6 @@ const LocationPage = () => {
 
         .modal-content {
           background-color: white;
-          padding: 1rem;
           border-radius: 8px;
           text-align: center;
           position: relative;
@@ -132,7 +131,6 @@ const LocationPage = () => {
         .modal-img {
           width: 100%;
           height: auto;
-          margin-bottom: 1rem;
         }
 
         .close-btn {

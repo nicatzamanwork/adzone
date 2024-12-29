@@ -1,8 +1,44 @@
 /* Section Styling */
 .services-section {
   padding: 4rem 2rem;
-  background: #f9f9f9;
+  background: #f5f5f5;
   text-align: center;
+}
+.internal-service-icon {
+  width: 20%;
+}
+.service-list {
+  list-style: none; /* Removes bullets from the list */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  text-align: center; /* Aligns the text to the left */
+}
+
+.service-list li {
+  margin-bottom: 1rem; /* Adds spacing between list items */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555; /* Neutral text color */
+}
+
+.service-list strong {
+  font-weight: bold;
+  color: #333; /* Slightly darker color for emphasis */
+}
+
+.services-section-internal {
+  padding: 4rem 25rem;
+  background: white;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .InternalService-Container {
+    padding: 1rem; /* Compact padding for mobile */
+  }
+
+  .InternalService-Container > div {
+    gap: 1rem; /* Reduce gap between items */
+  }
 }
 
 .about-subtitle {
@@ -101,7 +137,11 @@
     flex: 1 1 100%; /* One card per row */
     margin: 0 auto;
   }
-
+  .services-section-internal {
+    padding: 4rem 2rem;
+    background: white;
+    text-align: center;
+  }
   .services-title {
     font-size: 1.5rem;
     margin-bottom: 2rem;

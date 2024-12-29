@@ -143,7 +143,7 @@ const ContactForm = () => {
       <div className="contact-info-right">
         <h2>Contact</h2>
         <p>
-          <strong>Email:</strong>{" "}
+          <strong>Email: info@adzone.az</strong>{" "}
         </p>
         <p>
           <strong>Address:</strong> 123 Main St, Baku, Azerbaijan

@@ -23,7 +23,6 @@
 /* Individual Card Styling */
 .location-card {
   background-color: #fff;
-  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1 1 calc(48% - 1rem); /* Two cards per row */
@@ -87,7 +86,6 @@
   position: relative;
   overflow: hidden;
   flex: 1 1 calc(48% - 1rem); /* Two cards per row */
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
