@@ -2,6 +2,7 @@ import React from "react";
 import "../app/components/styles/About.css";
 import Navbar from "../app/components/Navbar";
 import Link from "next/link";
+import Contact from "../app/components/Contact";
 const About = () => {
   return (
     <>
@@ -19,10 +20,14 @@ const About = () => {
             project: history movies to adventure, action sci-fi and romantic
             genres.
           </p>
-          <a href="#contact" className="about-link" onClick={(e) => {
+          <a
+            href="#contact"
+            className="about-link"
+            onClick={(e) => {
               e.preventDefault(); // Prevent default anchor behavior
               window.location.href = "/#contact"; // Navigate to the home page with the contact section
-            }}>
+            }}
+          >
             Get in touch
           </a>
         </div>
@@ -30,6 +35,7 @@ const About = () => {
           <img src="images/location.jpeg" alt="Office Environment" />
         </div>
       </section>
+      <Contact />
     </>
   );
 };
