@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import "./LocationPage.css"; // Ensure the file path is correct
 import Navbar from "../app/components/Navbar";
+import "./LocationPage.css"; // Ensure the file path is correct
 
 const LocationPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null); // State for selected image
 
   const images = [
     { src: "7 (1).jpg", tags: ["History"], title: "Sheki Khan Palace" },
     { src: "7.jpg", tags: ["Village"], title: "Sheki Khan Palace" },
     { src: "8 (2).jpg", tags: ["Desert"], title: "Three Saints Church" },
-    // Add a title if known
     { src: "10.jpg", tags: ["History"], title: "Shaki Carevansarai" },
     { src: "15.jpg", tags: ["Village"], title: "Church of Kish" },
     { src: "16.jpg", tags: ["History"], title: "Ateshgah" },
@@ -31,14 +31,21 @@ const LocationPage = () => {
 
   const filters = ["All", "History", "Village", "Mountain"];
 
-  // Determine which images to display based on the selected filter
   const filteredImages =
     activeIndex === 0 || activeIndex === null
       ? images
       : images.filter((image) => image.tags.includes(filters[activeIndex]));
 
-  const handleClick = (index) => {
+  const handleFilterClick = (index) => {
     setActiveIndex(index);
+  };
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image); // Set clicked image
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImage(null); // Close modal
   };
 
   return (
@@ -47,7 +54,7 @@ const LocationPage = () => {
       <div className="location-page">
         {/* Header Section */}
         <header className="header">
-          <h1 style={{ textAlign: "left" }}>Locations</h1>
+          <h1>Locations</h1>
         </header>
 
         {/* Filters Section */}
@@ -56,7 +63,7 @@ const LocationPage = () => {
             <button
               key={index}
               className={`filter-btn ${activeIndex === index ? "active" : ""}`}
-              onClick={() => handleClick(index)}
+              onClick={() => handleFilterClick(index)}
             >
               {filter}
             </button>
@@ -66,7 +73,11 @@ const LocationPage = () => {
         {/* Cards Section */}
         <div className="card-grid">
           {filteredImages.map((image, index) => (
-            <div className="card" key={index}>
+            <div
+              className="card"
+              key={index}
+              onClick={() => handleImageClick(image)} // Handle image click
+            >
               <img
                 src={`images/ancient/${image.src}`}
                 alt={image.title}
@@ -76,7 +87,65 @@ const LocationPage = () => {
             </div>
           ))}
         </div>
+
+        {/* Popup Modal */}
+        {selectedImage && (
+          <div className="modal" onClick={handleCloseModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="close-btn" onClick={handleCloseModal}>
+                &times;
+              </button>
+              <img
+                src={`images/ancient/${selectedImage.src}`}
+                alt={selectedImage.title}
+                className="modal-img"
+              />
+              <h2>{selectedImage.title}</h2>
+            </div>
+          </div>
+        )}
       </div>
+      <style jsx>{`
+        .modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.8);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        }
+
+        .modal-content {
+          background-color: white;
+          padding: 1rem;
+          border-radius: 8px;
+          text-align: center;
+          position: relative;
+          max-width: 500px;
+          width: 90%;
+        }
+
+        .modal-img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: none;
+          border: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: #000;
+        }
+      `}</style>
     </>
   );
 };

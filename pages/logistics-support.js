@@ -22,8 +22,20 @@ const Blog = () => {
       </header>
       <section className="services-section" id="services">
         <div className="services-content">
+          <div className="service-intro">
+            <img
+              src="/images/logisticSupportIcon.jpeg"
+              alt="Logistics Icon"
+              className="service-icon"
+            />
+            <p>
+              Filmworks Azerbaijan provides comprehensive logistics support for
+              smooth and successful production.
+            </p>
+          </div>
+
           <div className="service-item">
-            <h3>Travel Arrangements:</h3>
+            <h3>Travel Arrangements</h3>
             <p>
               We handle transportation logistics for crew members, equipment,
               and talent, ensuring smooth travel between locations.
@@ -31,7 +43,7 @@ const Blog = () => {
           </div>
 
           <div className="service-item">
-            <h3>Catering & Accommodation:</h3>
+            <h3>Catering & Accommodation</h3>
             <p>
               We can recommend or arrange local catering services and
               accommodations for your crew and talent.
@@ -39,7 +51,7 @@ const Blog = () => {
           </div>
 
           <div className="service-item">
-            <h3>Crew & Equipment Coordination:</h3>
+            <h3>Crew & Equipment Coordination</h3>
             <p>
               We facilitate the logistics of getting your crew and equipment to
               the location, ensuring timely and efficient setup.
@@ -47,7 +59,7 @@ const Blog = () => {
           </div>
 
           <div className="service-item">
-            <h3>Parking & Traffic Management:</h3>
+            <h3>Parking & Traffic Management</h3>
             <p>
               We plan parking arrangements for large crews or vehicles, manage
               traffic flow around the location, and coordinate with local
@@ -98,8 +110,8 @@ const Blog = () => {
             </div>
           </Link>
         </div>
-        <Contact />
       </section>
+      <Contact />
     </>
   );
 };

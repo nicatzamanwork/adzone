@@ -75,7 +75,9 @@ const ContactForm = () => {
           <h5 className="form-title">GET IN TOUCH</h5>
           <h2 className="form-header">We’re here to assist you!</h2>
 
-          <label htmlFor="name">Name *</label>
+          <label htmlFor="name" style={{ paddingTop: "10px" }}>
+            Name *
+          </label>
           <input
             type="text"
             id="name"
@@ -139,7 +141,7 @@ const ContactForm = () => {
       </div>
 
       <div className="contact-info-right">
-        <h2>Get in Touch</h2>
+        <h2>Contact</h2>
         <p>
           <strong>Email:</strong>{" "}
         </p>
