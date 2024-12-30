@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function GalleryMain() {
   const cards = [
     {
-      title: "Location Scouting",
+      title: "Logistic Support",
       description: "Experience serene forest locations for your scenes.",
-      image: "/images/Ateshgah.jpg",
-      link: "/location-scouting",
+      image: "/images/scouting.jpg",
+      link: "/logistics-support",
     },
     {
       title: "Full-cycle Production",

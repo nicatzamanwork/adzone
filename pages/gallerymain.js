@@ -50,7 +50,7 @@ export default function GalleryMain() {
               <Link href={card.link} key={index} className="card">
                 <img src={card.image} alt={card.title} className="card-img" />
                 <h2>{card.title} &gt;</h2>
-                {/* <p>{card.description}</p> */}
+                 <p></p>
               </Link>
             ))}
           </div>
