@@ -5,7 +5,9 @@
   gap: 50px; /* Space between left and right columns */
   padding: 125px;
 }
-
+.form-title {
+  color: #e53935;
+}
 /* Left column (form) */
 .contact-form-left {
   flex: 1; /* Takes up half of the available width */
@@ -72,7 +74,7 @@
 @media (max-width: 430px) {
   .contact-container {
     flex-direction: column; /* Stack the columns vertically */
-    padding: 30px; /* Adjust padding for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
   }
 
   .contact-form-left {

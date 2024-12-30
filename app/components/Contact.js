@@ -128,7 +128,7 @@ const ContactForm = () => {
               onChange={handleChange}
               required
             />
-            <label htmlFor="consent" style={{marginLeft: "5px"}}>
+            <label htmlFor="consent" style={{ marginLeft: "5px" }}>
               I allow this website to store my submission so they can respond to
               my inquiry. *
             </label>
@@ -146,14 +146,27 @@ const ContactForm = () => {
           <strong>
             <a
               href="mailto:info@adzone.az"
-              style={{ textDecoration: "none", color: "inherit" }}
+              style={{ textDecoration: "underline", color: "inherit" }}
             >
               Email: info@adzone.az
             </a>
           </strong>
         </p>
+
         <p>
-          <strong>Address:</strong> 69E Uzeyir Hajibeyli street, Baku, Azerbaijan
+          <strong>
+            <a
+              href="tel:+994102554396"
+              style={{ textDecoration: "underline", color: "inherit" }}
+            >
+              Phone: +994102554396
+            </a>
+          </strong>
+        </p>
+
+        <p>
+          <strong>Address:</strong> 69E Uzeyir Hajibeyli street, Baku,
+          Azerbaijan
         </p>
         <p>
           <strong>Business Days:</strong>
