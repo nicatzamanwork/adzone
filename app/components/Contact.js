@@ -153,19 +153,19 @@ const ContactForm = () => {
           </strong>
         </p>
         <p>
-          <strong>Address:</strong> 123 Main St, Baku, Azerbaijan
+          <strong>Address:</strong> 69E Uzeyir Hajibeyli street, Baku, Azerbaijan
         </p>
         <p>
           <strong>Business Days:</strong>
         </p>
         <br />
-        <p> Monday, 9 AM - 10 PM</p>
-        <p> Tuesday, 9 AM - 10 PM</p>
-        <p> Wednesday, 9 AM - 10 PM</p>
-        <p> Thursday, 9 AM - 10 PM</p>
-        <p> Friday, 9 AM - 10 PM</p>
-        <p> Saturday, 9 AM - 6 PM</p>
-        <p> Sunday, 9 AM - 12 PM</p>
+        <p> Monday, 9 AM - 6 PM</p>
+        <p> Tuesday, 9 AM - 6 PM</p>
+        <p> Wednesday, 9 AM - 6 PM</p>
+        <p> Thursday, 9 AM - 6 PM</p>
+        <p> Friday, 9 AM - 6 PM</p>
+        <p> Saturday, Closed</p>
+        <p> Sunday, Closed</p>
       </div>
     </div>
   );

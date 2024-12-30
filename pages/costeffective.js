@@ -1,6 +1,7 @@
 import React from "react";
 import "../app/components/styles/About.css";
 import Navbar from "../app/components/Navbar";
+import Contact from "../app/components/Contact";
 import Link from "next/link";
 const About = () => {
   return (
@@ -24,10 +25,14 @@ const About = () => {
             saving both time and money, while expanding the creative
             possibilities for your project
           </p>
-          <a href="/gallerymain" className="about-link" onClick={(e) => {
+          <a
+            href="/gallerymain"
+            className="about-link"
+            onClick={(e) => {
               e.preventDefault(); // Prevent default anchor behavior
               window.location.href = "/gallerymain"; // Navigate to the home page with the contact section
-            }}>
+            }}
+          >
             Catalog
           </a>
         </div>
@@ -35,6 +40,7 @@ const About = () => {
           <img src="images/cost-effective.jpeg" alt="Office Environment" />
         </div>
       </section>
+      <Contact />
     </>
   );
 };
