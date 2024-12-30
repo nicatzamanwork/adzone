@@ -1,101 +1,95 @@
-.article {
-  max-width: 800px; /* Limit the width for better readability */
-  margin: 20px auto; /* Center the article with space above and below */
-  line-height: 1.8; /* Increase line height for readability */
-  font-size: 1.125rem; /* Adjust font size for better legibility */
-  color: #333; /* Dark gray text for better contrast */
-}
-
-.article h3 {
-  font-size: 1.5rem; /* Subheadings slightly smaller than main heading */
-  margin: 20px 0 10px; /* Add space above and below subheadings */
-  color: #2c3e50; /* Darker color for emphasis */
-}
-
-.article ul {
-  display: block; /* Ensure the list behaves as a block */
-  margin: 10px 0; /* Add vertical spacing for the list */
-  padding: 0; /* Optional: remove extra padding */
-}
-
-.article ul li {
-  display: block; /* Force each list item to take up the full width */
-  margin: 15px 0; /* Add spacing between items */
-  line-height: 1.6; /* Improve readability */
-}
-
-.article p {
-  margin: 10px 0; /* Add spacing between paragraphs */
-  text-align: justify; /* Justify text for a cleaner block look */
-}
-
-.header {
-  text-align: center; /* Center-align text and image */
+/* General Styles */
+.page-container {
   display: flex;
-  flex-direction: column; /* Stack the image and heading vertically */
-  align-items: center; /* Align the content horizontally */
-  justify-content: center; /* Center content vertically */
-  margin: 20px 0; /* Add spacing around the header */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the container */
+  text-align: center; /* Center-align text content */
 }
 
-.header h2 {
-  font-size: 2.5rem; /* Adjust size for main heading */
-  margin-bottom: 15px; /* Space below heading */
-  color: #2c3e50; /* Consistent color with subheadings */
-  text-align: center; /* Center the heading text */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.header img {
-  max-width: 90%; /* Ensure image fits within container */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Space below the image */
-  border-radius: 10px; /* Optional: Add slight rounding for a softer look */
+/* Header Styles */
+.header {
+  margin-bottom: 30px;
 }
 
-/* Media Query for iPhone 14 Pro Max (430px wide) */
-@media only screen and (max-width: 430px) {
-  .header h2 {
-    font-size: 1.75rem; /* Adjust size for smaller screens */
-    margin-bottom: 10px;
-  }
-
-  .header img {
-    width: 100%; /* Full width on smaller screens */
-    margin-bottom: 15px;
-  }
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
 }
 
+.header-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  border-radius: 8px; /* Optional: Add slight rounding */
+  margin-bottom: 10px;
+}
+
+.image-caption {
+  font-size: 0.875rem;
+  color: #777;
+  margin-top: -10px;
+}
+
+/* Article Styles */
+.article {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify; /* Justify text for better readability */
+}
+
+.intro-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
-  .article ul {
-    padding: 0 15px; /* Add padding to ensure spacing on smaller screens */
+  .header-title {
+    font-size: 2rem;
   }
 
-  .article ul li {
-    margin: 10px 0; /* Adjust spacing between list items */
-    font-size: 1rem; /* Make text slightly smaller */
-    line-height: 1.5; /* Adjust line height */
+  .header-subtitle {
+    font-size: 1rem;
+  }
+
+  .article {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
-/* Media Query for iPhone 14 Pro Max (430px wide) */
+
 @media only screen and (max-width: 430px) {
+  .header-title {
+    font-size: 1.75rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.9rem;
+  }
+
   .article {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    line-height: 1.6; /* Adjust line height for smaller screens */
-    padding: 0 10px; /* Add padding on smaller screens */
-  }
-
-  .article h3 {
-    font-size: 1.25rem; /* Slightly smaller subheadings on mobile */
-    margin: 15px 0 8px;
-  }
-
-  .article ul {
-    padding: 0 0px; /* Add padding for very small devices */
-  }
-
-  .article ul li {
-    font-size: 0.9rem; /* Make font smaller for better fit */
-    margin: 8px 0; /* Reduce spacing further */
-    line-height: 1.4; /* Adjust line height for compact design */
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }

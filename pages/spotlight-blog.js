@@ -1,7 +1,6 @@
 import Image from "next/image";
-import "./blogPage.css"; // global stylesheet
 import Navbar from "../app/components/Navbar";
-
+import "./blogPage.css"; // global stylesheets
 const Spotlight = () => {
   return (
     <>
@@ -9,10 +8,13 @@ const Spotlight = () => {
       <div className="page-container">
         <main className="content">
           <header className="header">
-            <h2>Spotlight on Baku: The Perfect Urban Filming Destination</h2>
+            <h2 className="header-title">
+              Spotlight on Baku: The Perfect Urban Filming Destination
+            </h2>
             <Image
               src="/images/bakunight.jpg"
               alt="Rich Cultural Heritage"
+              className="header-image"
               width={800}
               height={450}
               priority

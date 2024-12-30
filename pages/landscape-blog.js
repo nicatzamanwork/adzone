@@ -1,8 +1,6 @@
-// components/TenBestFilm/TenBestFilm.js
 import Image from "next/image";
-import "./blogPage.css"; // global stylesheet
 import Navbar from "../app/components/Navbar";
-
+import "./blogPage.css"; // global stylesheets
 const Petroglyphs = () => {
   return (
     <>
@@ -10,23 +8,20 @@ const Petroglyphs = () => {
       <div className="page-container">
         <main className="content">
           <header className="header">
-            <h2>
+            <h2 className="header-title">
               From Petroglyphs to Palaces: Exploring Azerbaijan’s Cinematic
               Landscapes
             </h2>
             <Image
               src="/images/land.JPG"
               alt="Rich Cultural Heritage"
+              className="header-image"
               width={800}
               height={450}
               priority
             />
           </header>
           <article className="article">
-            <h1>
-              From Petroglyphs to Palaces: Exploring Azerbaijan’s Cinematic
-              Landscapes
-            </h1>
             <p>
               Azerbaijan, often referred to as the “Land of Fire,” is a hidden
               gem for filmmakers and travelers alike. Its dramatic landscapes,
@@ -76,12 +71,8 @@ const Petroglyphs = () => {
                 fantasy settings.
               </li>
             </ul>
+
             <h2>The Caspian Coastline: A Dynamic Backdrop</h2>
-            <p>
-              Azerbaijan’s coastline along the Caspian Sea offers a variety of
-              scenic options, from tranquil beaches to bustling urban
-              promenades.
-            </p>
             <ul>
               <li>
                 <strong>Baku Boulevard:</strong> A picturesque waterfront
@@ -113,6 +104,7 @@ const Petroglyphs = () => {
                 feature that lends itself to otherworldly, surreal visuals.
               </li>
             </ul>
+
             <h2>Mountains and Villages: Timeless Beauty</h2>
             <ul>
               <li>

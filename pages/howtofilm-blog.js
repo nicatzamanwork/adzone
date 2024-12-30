@@ -1,8 +1,6 @@
-// components/HowToFilm/HowToFilm.js
 import Image from "next/image";
-import "./blogPage.css"; // global stylesheet
-import Navbar from "../app/components/Navbar"; 
-
+import Navbar from "../app/components/Navbar";
+import "./blogPage.css"; // global stylesheets
 const HowToFilm = () => {
   return (
     <>
@@ -10,10 +8,11 @@ const HowToFilm = () => {
       <div className="page-container">
         <main className="content">
           <header className="header">
-            <h2>How to Film in the Land of Fire</h2>
+            <h2 className="header-title">How to Film in the Land of Fire</h2>
             <Image
               src="/images/Ateshgah (15).jpg"
               alt="Rich Cultural Heritage"
+              className="header-image"
               width={800}
               height={450}
               priority
