@@ -48,6 +48,10 @@ const LocationPage = () => {
     setSelectedImage(null); // Close modal
   };
 
+  const disableRightClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <Navbar />
@@ -82,8 +86,8 @@ const LocationPage = () => {
                 src={`images/ancient/${image.src}`}
                 alt={image.title}
                 className="card-img"
+                onContextMenu={disableRightClick} // Disable right-click
               />
-              {/* <h2>{image.title}</h2> */}
             </div>
           ))}
         </div>
@@ -99,8 +103,8 @@ const LocationPage = () => {
                 src={`images/ancient/${selectedImage.src}`}
                 alt={selectedImage.title}
                 className="modal-img"
+                onContextMenu={disableRightClick} // Disable right-click
               />
-              {/* <h2>{selectedImage.title}</h2> */}
             </div>
           </div>
         )}
