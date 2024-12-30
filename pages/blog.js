@@ -12,7 +12,7 @@ const Locations = () => {
         <div className="locations-container">
           {/* Card 1 */}
           <div className="location-card">
-            <Link href="/howtofilm">
+            <Link href="/howtofilm-blog">
               <img
                 src="/images/Ateshgah (15).jpg"
                 alt="Rich Cultural Heritage"
@@ -27,7 +27,7 @@ const Locations = () => {
 
           {/* Card 2 */}
           <div className="location-card">
-            <Link href="/petroglygps">
+            <Link href="/landscape-blog">
               <img src="/images/land.JPG" alt="Cost-effective Filming" />
               <div className="overlay">
                 <h3 style={{ color: "white" }}>
@@ -40,7 +40,7 @@ const Locations = () => {
 
           {/* Card 3 */}
           <div className="location-card">
-            <Link href="/tenbestfilming">
+            <Link href="/tenbestfilming-blog">
               <img
                 src="/images/Khinalig (12) (1).jpg"
                 alt="Diverse and Unique Locations"
@@ -55,7 +55,7 @@ const Locations = () => {
 
           {/* Card 4 */}
           <div className="location-card">
-            <Link href="/spotlight">
+            <Link href="/spotlight-blog">
               <img
                 src="/images/bakunight.jpg"
                 alt="High Filming Accessibility"
