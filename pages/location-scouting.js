@@ -21,7 +21,7 @@ const InternalService = () => {
         <div className="internal-services-content">
           <div className="internal-service-item">
             <img
-              src="/images/locationScoutingIcon.png"
+              src="/images/ancient/road.png"
               alt="Location Scouting Icon"
               className="internal-service-icon"
             />

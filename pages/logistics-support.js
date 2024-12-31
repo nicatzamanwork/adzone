@@ -25,7 +25,7 @@ const Blog = () => {
         <div className="services-content">
           <div className="service-intro">
             <img
-              src="/images/Car.png"
+              src="/images/ancient/logisticsupportred.png"
               alt="Location Scouting Icon"
               className="internal-service-icon"
             />

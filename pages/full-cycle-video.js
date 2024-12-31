@@ -30,7 +30,7 @@ const Blog = () => {
 
           <div className="service-category">
             <img
-              src="/images/ancient/prepro.png"
+              src="/images/ancient/fullpre.png"
               alt="Pre-Production Icon"
               className="internal-service-icon"
             />
@@ -75,7 +75,7 @@ const Blog = () => {
 
           <div className="service-category">
             <img
-              src="/images/ancient/production.png"
+              src="/images/ancient/preproduction.png"
               alt="Production Icon"
               className="internal-service-icon"
             />
@@ -102,7 +102,7 @@ const Blog = () => {
 
           <div className="service-category">
             <img
-              src="/images/ancient/post-production.jpg"
+              src="/images/ancient/production.png"
               alt="Post-Production Icon"
               className="internal-service-icon"
             />
