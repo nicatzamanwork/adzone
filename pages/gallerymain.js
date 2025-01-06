@@ -49,10 +49,12 @@ export default function GalleryMain() {
         {/* Cards Section */}
         <div className="card-grid">
           {cards.map((card, index) => (
-            <Link href={card.link} key={index} className="card">
-              <img src={card.image} alt={card.title} className="card-img" />
-              <h2>{card.title} &gt;</h2>
-              {/* <p>{card.description}</p> */}
+            <Link href={card.link} key={index}>
+              <a className="card">
+                <img src={card.image} alt={card.title} className="card-img" />
+                <h2>{card.title} &gt;</h2>
+                {/* <p>{card.description}</p> */}
+              </a>
             </Link>
           ))}
         </div>
