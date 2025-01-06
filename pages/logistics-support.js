@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import "../app/components/styles/About.css";
 import "../app/components/styles/Blog.css";
 import "../app/components/styles/Services.css";
+import Link from "next/link";
 
 const Blog = () => {
   const { t } = useTranslation("logisticSupport");
@@ -37,22 +38,30 @@ const Blog = () => {
           </div>
 
           <div className="service-item">
-          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.travelArrangements.title")}</h3>
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.travelArrangements.title")}
+            </h3>
             <p>{t("services.travelArrangements.description")}</p>
           </div>
 
           <div className="service-item">
-          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.catering.title")}</h3>
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.catering.title")}
+            </h3>
             <p>{t("services.catering.description")}</p>
           </div>
 
           <div className="service-item">
-          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.crewCoordination.title")}</h3>
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.crewCoordination.title")}
+            </h3>
             <p>{t("services.crewCoordination.description")}</p>
           </div>
 
           <div className="service-item">
-          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.parkingManagement.title")}</h3>
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.parkingManagement.title")}
+            </h3>
             <p>{t("services.parkingManagement.description")}</p>
           </div>
         </div>
