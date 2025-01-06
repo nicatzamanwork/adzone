@@ -34,7 +34,7 @@ body {
     minmax(400px, 1fr)
   ); /* Keep cards dynamic */
   gap: 1rem;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
 }
 
 .card {
@@ -87,6 +87,7 @@ body {
 /* Small screens (768px and below) */
 @media (max-width: 768px) {
   .card-grid {
+    padding: 1rem;
     grid-template-columns: 1fr; /* Show 1 card per row */
     gap: 1rem;
   }
@@ -107,6 +108,7 @@ body {
 /* Extra small screens (480px and below) */
 @media (max-width: 480px) {
   .card-grid {
+    padding: 1rem;
     gap: 0.5rem;
   }
 
