@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import "./blogPage.css";
 
 const HowToFilm = () => {
-  const { t } = useTranslation("howToFilm");
+  const { t } = useTranslation("howtofilm");
 
   return (
     <>
