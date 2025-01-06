@@ -1,17 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "../app/components/Navbar";
-import "./blogPage.css"; // global stylesheets
+import { useTranslation } from "react-i18next";
+import "./blogPage.css";
+
 const HowToFilm = () => {
+  const { t } = useTranslation("howToFilm");
+
   return (
     <>
       <Navbar />
       <div className="page-container">
         <main className="content">
           <header className="header">
-            <h2 className="header-title">How to Film in the Land of Fire</h2>
+            <h2 className="header-title">{t("title")}</h2>
             <Image
               src="/images/Ateshgah (15).jpg"
-              alt="Rich Cultural Heritage"
+              alt={t("headerImageAlt")}
               className="header-image"
               width={800}
               height={450}
@@ -19,82 +25,100 @@ const HowToFilm = () => {
             />
           </header>
           <article className="article">
-            <h3>Why Choose Azerbaijan for Filming?</h3>
-            <p>
-              Azerbaijan’s appeal lies in its diversity. The country seamlessly blends ancient and modern worlds, offering everything from prehistoric petroglyphs to cutting-edge architecture. Whether you’re looking for medieval streets, grand palaces, surreal natural phenomena, or sleek urban skylines, Azerbaijan delivers.
-            </p>
-            <p>
-              Its strategic location at the crossroads of Europe and Asia, coupled with government support for the film industry, makes it a rising star in global cinema.
-            </p>
+            <h3>{t("whyChoose.title")}</h3>
+            <p>{t("whyChoose.text1")}</p>
+            <p>{t("whyChoose.text2")}</p>
 
-            <h3>Step 1: Plan Your Locations</h3>
-            <p>To film in Azerbaijan, it’s essential to research and plan locations based on your project’s needs. Here are some standout filming spots:</p>
+            <h3>{t("steps.planLocations.title")}</h3>
+            <p>{t("steps.planLocations.text")}</p>
 
-            <h4>Historical Sites</h4>
+            <h4>{t("steps.planLocations.historicalSites.title")}</h4>
             <ul>
-              <li><strong>Gobustan National Park:</strong> Home to ancient petroglyphs and unique rock formations, perfect for documentaries, historical dramas, or sci-fi visuals.</li>
-              <li><strong>Icherisheher (Old City):</strong> A UNESCO World Heritage Site in Baku, offering narrow cobblestone streets, the Maiden Tower, and the Palace of the Shirvanshahs for period films or atmospheric settings.</li>
-              <li><strong>Ateshgah (Fire Temple):</strong> One of the most fascinating locations for historical content, known for its rich history and cultural significance.</li>
+              <li>
+                <strong>{t("steps.planLocations.historicalSites.gobustan.title")}:</strong>{" "}
+                {t("steps.planLocations.historicalSites.gobustan.description")}
+              </li>
+              <li>
+                <strong>{t("steps.planLocations.historicalSites.icherisheher.title")}:</strong>{" "}
+                {t("steps.planLocations.historicalSites.icherisheher.description")}
+              </li>
+              <li>
+                <strong>{t("steps.planLocations.historicalSites.ateshgah.title")}:</strong>{" "}
+                {t("steps.planLocations.historicalSites.ateshgah.description")}
+              </li>
             </ul>
 
-            <h4>Natural Wonders</h4>
+            <h4>{t("steps.planLocations.naturalWonders.title")}</h4>
             <ul>
-              <li><strong>The Khizi Mountains:</strong> Their otherworldly landscape makes them ideal for sci-fi or futuristic films.</li>
-              <li><strong>Mud Volcanoes:</strong> Azerbaijan has the world’s largest concentration of these natural phenomena, offering surreal, alien-like landscapes.</li>
-              <li><strong>Caucasus Mountains:</strong> Stunning vistas and traditional villages like Khinalig make this region perfect for nature-focused storytelling.</li>
+              <li>
+                <strong>{t("steps.planLocations.naturalWonders.khizi.title")}:</strong>{" "}
+                {t("steps.planLocations.naturalWonders.khizi.description")}
+              </li>
+              <li>
+                <strong>{t("steps.planLocations.naturalWonders.mudVolcanoes.title")}:</strong>{" "}
+                {t("steps.planLocations.naturalWonders.mudVolcanoes.description")}
+              </li>
+              <li>
+                <strong>{t("steps.planLocations.naturalWonders.caucasus.title")}:</strong>{" "}
+                {t("steps.planLocations.naturalWonders.caucasus.description")}
+              </li>
             </ul>
 
-            <h4>Modern Marvels</h4>
+            <h4>{t("steps.planLocations.modernMarvels.title")}</h4>
             <ul>
-              <li><strong>Heydar Aliyev Center:</strong> A futuristic architectural masterpiece by Zaha Hadid, ideal for avant-garde or sci-fi scenes.</li>
-              <li><strong>Flame Towers:</strong> Illuminating the skyline with fiery LED displays, adding a dramatic modern touch to urban scenes.</li>
-              <li><strong>Crescent Bay:</strong> A blend of modern architecture and luxury, offering a visually captivating setting.</li>
+              <li>
+                <strong>{t("steps.planLocations.modernMarvels.heydarCenter.title")}:</strong>{" "}
+                {t("steps.planLocations.modernMarvels.heydarCenter.description")}
+              </li>
+              <li>
+                <strong>{t("steps.planLocations.modernMarvels.flameTowers.title")}:</strong>{" "}
+                {t("steps.planLocations.modernMarvels.flameTowers.description")}
+              </li>
+              <li>
+                <strong>{t("steps.planLocations.modernMarvels.crescentBay.title")}:</strong>{" "}
+                {t("steps.planLocations.modernMarvels.crescentBay.description")}
+              </li>
             </ul>
 
-            <h3>Step 2: Obtain Filming Permits</h3>
-            <p>
-              To film in Azerbaijan, you’ll need to secure the necessary permits. The process is straightforward, especially for international filmmakers. Here's what to do:
-            </p>
+            <h3>{t("steps.obtainPermits.title")}</h3>
+            <p>{t("steps.obtainPermits.text")}</p>
             <ol>
-              <li>Identify key locations and note any restrictions.</li>
-              <li>Apply for permits with local authorities or hire a production service company.</li>
-              <li>Include drone usage clearance if required.</li>
+              <li>{t("steps.obtainPermits.steps.1")}</li>
+              <li>{t("steps.obtainPermits.steps.2")}</li>
+              <li>{t("steps.obtainPermits.steps.3")}</li>
             </ol>
 
-            <h3>Step 3: Partner with Local Production Services</h3>
-            <p>
-              Collaborating with local production companies can streamline your filmmaking process. They can assist with location scouting, securing permits, equipment rental, hiring local crew, and navigating cultural differences.
-            </p>
+            <h3>{t("steps.partnerLocal.title")}</h3>
+            <p>{t("steps.partnerLocal.text")}</p>
 
-            <h3>Step 4: Embrace the Local Culture</h3>
-            <p>
-              Filming in Azerbaijan isn’t just about visuals—it’s about immersing yourself in its culture. Engage with locals and enjoy traditional cuisine to inspire your creative process.
-            </p>
+            <h3>{t("steps.embraceCulture.title")}</h3>
+            <p>{t("steps.embraceCulture.text")}</p>
 
-            <h3>Step 5: Prepare for Climate and Terrain</h3>
-            <p>
-              Azerbaijan’s diverse geography means varying climates and terrains:
-            </p>
+            <h3>{t("steps.prepareClimate.title")}</h3>
+            <p>{t("steps.prepareClimate.text")}</p>
             <ul>
-              <li><strong>Urban areas:</strong> Hot summers and mild winters; pack accordingly for city shoots.</li>
-              <li><strong>Mountains:</strong> Cold and snowy winters; ensure proper gear for high-altitude filming.</li>
-              <li><strong>Deserts and volcanic areas:</strong> Prepare for heat and dry conditions.</li>
+              <li>
+                <strong>{t("steps.prepareClimate.points.urban.title")}:</strong>{" "}
+                {t("steps.prepareClimate.points.urban.description")}
+              </li>
+              <li>
+                <strong>{t("steps.prepareClimate.points.mountains.title")}:</strong>{" "}
+                {t("steps.prepareClimate.points.mountains.description")}
+              </li>
+              <li>
+                <strong>{t("steps.prepareClimate.points.deserts.title")}:</strong>{" "}
+                {t("steps.prepareClimate.points.deserts.description")}
+              </li>
             </ul>
 
-            <h3>Step 6: Focus on Post-Production Needs</h3>
-            <p>
-              Azerbaijan offers modern post-production facilities, but consider bringing specialized equipment or collaborating with local editors for authenticity.
-            </p>
+            <h3>{t("steps.focusPost.title")}</h3>
+            <p>{t("steps.focusPost.text")}</p>
 
-            <h3>Step 7: Respect the Environment and Heritage</h3>
-            <p>
-              Preserve the integrity of natural and cultural sites by following all regulations and guidelines to avoid damage.
-            </p>
+            <h3>{t("steps.respectEnvironment.title")}</h3>
+            <p>{t("steps.respectEnvironment.text")}</p>
 
-            <h3>Why the Land of Fire is Worth It</h3>
-            <p>
-              Filming in Azerbaijan is not just about capturing stunning visuals—it’s about telling a story enriched by the country’s culture, history, and natural beauty. Proper planning and local partnerships can elevate your project to new heights.
-            </p>
+            <h3>{t("landOfFire.title")}</h3>
+            <p>{t("landOfFire.text")}</p>
           </article>
         </main>
       </div>

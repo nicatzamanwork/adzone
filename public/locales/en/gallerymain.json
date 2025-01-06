@@ -1,0 +1,23 @@
+{
+    "title": "Locations",
+    "header": "Explore Stunning Locations",
+    "cards": {
+      "urban": {
+        "title": "Urban",
+        "description": "Discover stunning mountain escapes for your project."
+      },
+      "europe": {
+        "title": "Europe",
+        "description": "Find beautiful beaches perfect for your next shoot."
+      },
+      "nature": {
+        "title": "Nature",
+        "description": "Experience serene forest locations for your scenes."
+      },
+      "ancient": {
+        "title": "Ancient",
+        "description": "Capture the energy of vibrant urban locations."
+      }
+    }
+  }
+  

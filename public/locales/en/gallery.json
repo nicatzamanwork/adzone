@@ -1,0 +1,13 @@
+{
+    "header": {
+      "title": "Locations"
+    },
+    "filters": {
+      "all": "All",
+      "history": "History",
+      "village": "Village",
+      "mountain": "Mountain",
+      "desert": "Desert"
+    }
+  }
+  

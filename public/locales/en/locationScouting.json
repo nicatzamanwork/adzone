@@ -1,0 +1,25 @@
+{
+    "header": {
+      "title": "Location Scouting"
+    },
+    "services": {
+      "item1": {
+        "iconAlt": "Location Scouting Icon",
+        "title": "Initial Consultation",
+        "description": "We listen to your vision, project goals, and budget to provide tailored location recommendations."
+      },
+      "item2": {
+        "title": "Location Scouting for Film, TV, Music Videos, and Commercials",
+        "description": "Whether it’s a city street, a secluded forest, or a modern office, we find the perfect backdrop for your scene and ensure the ideal space to tell your visual story."
+      },
+      "item3": {
+        "title": "Site Visits",
+        "description": "We schedule visits and offer detailed reports and photos of potential locations."
+      },
+      "item4": {
+        "title": "Film Permits",
+        "description": "We handle location permits, paperwork, and logistical details to ensure a smooth shoot day."
+      }
+    }
+  }
+  

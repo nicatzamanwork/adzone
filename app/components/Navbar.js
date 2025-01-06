@@ -1,93 +1,100 @@
-"use client"; // Ensure it's a client-side component
+"use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LanguageSelector from "./LanguageDropDown";
+import { useTranslation } from "react-i18next";
+import Link from "next/link";
 import "../components/styles/Navbar.css";
-import Link from "next/link"; // Import Next.js Link component
 
 const Navbar = () => {
+  const { t } = useTranslation("navbar");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
+
   const closeMenu = () => {
     const checkBox = document.getElementById("check");
     if (checkBox) checkBox.checked = false;
   };
 
-  // Function to handle Contact navigation
-  const handleContactClick = (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
-    closeMenu(); // Close the menu
-    window.location.href = "/#contact"; // Navigate to the contact section on the homepage
-  };
-
   return (
     <nav className="navbar">
-      {/* Checkbox for toggling the menu */}
       <input type="checkbox" id="check" />
-
-      {/* Hamburger menu */}
       <label htmlFor="check" className="checkbtn">
-        <img src="/images/hamburger.png" alt="Hamburger Menu" />
+        <img src="/images/hamburger.png" alt="Menu" />
       </label>
-
-      {/* Logo */}
       <label className="logo">
         <a href="/#home">
           <img className="logo" src="/images/logo.png" alt="Logo" />
         </a>
       </label>
-
-      {/* Navigation links */}
       <ul className="navbar-list">
         <li>
           <a href="/#locations" onClick={closeMenu}>
-            Azerbaijan
+            {t("navbar.home")}
           </a>
         </li>
         <li>
           <a href="/#about" onClick={closeMenu}>
-            About
+            {t("navbar.about")}
           </a>
         </li>
         <li>
           <a href="/#services" onClick={closeMenu}>
-            Services
+            {t("navbar.services")}
           </a>
         </li>
         <li>
           <a href="/gallerymain" onClick={closeMenu}>
-            Locations
+            {t("navbar.locations")}
           </a>
         </li>
         <li>
           <Link href="/blog" onClick={closeMenu}>
-            Blog
+            {t("navbar.blog")}
           </Link>
         </li>
         <li>
           <Link href="/gallery" onClick={closeMenu}>
-            Catalog
+            {t("navbar.catalog")}
           </Link>
         </li>
+        {/* Contact Button for Mobile */}
         <li className="contact-button-mobile">
-          <a href="#contact" onClick={handleContactClick}>
-            Contact
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "/#contact";
+            }}
+          >
+            {t("navbar.contact")}
           </a>
         </li>
+        {/* Language Selector for Mobile */}
+        <li className="language-selector-mobile">
+          <LanguageSelector />
+        </li>
       </ul>
-
-      <li className="contact-button">
+      {/* Desktop Versions */}
+      <div className="language-selector-desktop">
         <LanguageSelector />
-      </li>
-      <li className="contact-button">
+      </div>
+      <div className="contact-button">
         <a
           href="#contact"
           onClick={(e) => {
-            e.preventDefault(); // Prevent default anchor behavior
-            window.location.href = "/#contact"; // Navigate to the home page with the contact section
+            e.preventDefault();
+            window.location.href = "/#contact";
           }}
         >
-          Contact
+          {t("navbar.contact")}
         </a>
-      </li>
+      </div>
     </nav>
   );
 };

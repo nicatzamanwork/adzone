@@ -1,33 +1,35 @@
+"use client";
+
 import "../components/styles/Services.css";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation("services"); // Use 'services' namespace
+
   return (
     <section id="services" className="services-section">
-      <h5 className="about-subtitle">YOUR VISION, OUR EXPERTISE</h5>
-      <h2 className="services-title">
-        We provide end-to-end support for international film productions in
-        Azerbaijan
-      </h2>
+      <h5 className="about-subtitle">{t("subtitle")}</h5>
+      <h2 className="services-title">{t("title")}</h2>
       <div className="service-boxes-container">
         {/* Service 1 */}
         <Link href="/location-scouting" passHref>
           <div className="service-box">
             <img
               src="/images/Ateshgah.jpg"
-              alt="Location Scouting"
+              alt={t("services.locationScouting.title")}
               className="service-image"
             />
             <div className="service-content">
               <h3>
-                Location Scouting{" "}
+                {t("services.locationScouting.title")}{" "}
                 <img
                   src="/images/arrow.png"
                   alt="Arrow"
                   className="arrow-icon"
                 />
               </h3>
-              <p>Discover stunning locations for your next project.</p>
+              <p>{t("services.locationScouting.description")}</p>
             </div>
           </div>
         </Link>
@@ -37,19 +39,19 @@ const Services = () => {
           <div className="service-box">
             <img
               src="/images/scouting.jpg"
-              alt="Logistics Support"
+              alt={t("services.logisticsSupport.title")}
               className="service-image"
             />
             <div className="service-content">
               <h3>
-                Logistics Support{" "}
+                {t("services.logisticsSupport.title")}{" "}
                 <img
                   src="/images/arrow.png"
                   alt="Arrow"
                   className="arrow-icon"
                 />
               </h3>
-              <p>We help you with expert planning and execution.</p>
+              <p>{t("services.logisticsSupport.description")}</p>
             </div>
           </div>
         </Link>
@@ -59,19 +61,19 @@ const Services = () => {
           <div className="service-box">
             <img
               src="/images/fullscale.jpg"
-              alt="Full-Cycle Video Production"
+              alt={t("services.fullCycleProduction.title")}
               className="service-image"
             />
             <div className="service-content">
               <h3>
-                Full-Cycle Production{" "}
+                {t("services.fullCycleProduction.title")}{" "}
                 <img
                   src="/images/arrow.png"
                   alt="Arrow"
                   className="arrow-icon"
                 />
               </h3>
-              <p>From pre-production to post-production support.</p>
+              <p>{t("services.fullCycleProduction.description")}</p>
             </div>
           </div>
         </Link>

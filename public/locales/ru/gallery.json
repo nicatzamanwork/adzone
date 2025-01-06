@@ -1,0 +1,12 @@
+{
+  "header": {
+    "title": "Локации"
+  },
+  "filters": {
+    "all": "Все",
+    "history": "История",
+    "village": "Деревня",
+    "mountain": "Горы",
+    "desert": "Пустыня"
+  }
+}

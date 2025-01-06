@@ -1,43 +1,34 @@
+"use client";
+
 import React from "react";
 import "../app/components/styles/About.css";
 import Navbar from "../app/components/Navbar";
 import Contact from "../app/components/Contact";
-import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+  const { t } = useTranslation("costeffective");
+
   return (
     <>
       <Navbar />
       <section className="about" id="about">
         <div className="about-content">
-          <h2 className="about-title">Cost-effective filming</h2>
-          <p className="about-description">
-            Filming movies, TV series, and music videos in Azerbaijan is an
-            economically advantageous choice. The cost of renting filming
-            locations, equipment, and services from local specialists is
-            significantly lower than in Europe or North America, allowing for
-            substantial savings on production costs without compromising
-            quality. Azerbaijan also offers highly qualified professionals who
-            are well-versed in international standards and work at competitive
-            rates. In addition, the country boasts a diverse range of unique
-            natural and architectural landscapes, perfect for shooting various
-            scenes—from ancient Eastern cities to futuristic metropolises. This
-            helps avoid additional costs for travel or renting extra locations,
-            saving both time and money, while expanding the creative
-            possibilities for your project
-          </p>
+          <h2 className="about-title">{t("title")}</h2>
+          <p className="about-description">{t("description")}</p>
           <a
             href="/gallerymain"
             className="about-link"
             onClick={(e) => {
               e.preventDefault(); // Prevent default anchor behavior
-              window.location.href = "/gallerymain"; // Navigate to the home page with the contact section
+              window.location.href = "/gallerymain"; // Navigate to the gallery page
             }}
           >
-            Catalog
+            {t("catalogLink")}
           </a>
         </div>
         <div className="about-image">
-          <img src="images/cost-effective.jpeg" alt="Office Environment" />
+          <img src="images/cost-effective.jpeg" alt={t("imageAlt")} />
         </div>
       </section>
       <Contact />

@@ -1,0 +1,19 @@
+{
+    "subtitle": "YOUR VISION, OUR EXPERTISE",
+    "title": "We provide end-to-end support for international film productions in Azerbaijan",
+    "services": {
+      "locationScouting": {
+        "title": "Location Scouting",
+        "description": "Discover stunning locations for your next project."
+      },
+      "logisticsSupport": {
+        "title": "Logistics Support",
+        "description": "We help you with expert planning and execution."
+      },
+      "fullCycleProduction": {
+        "title": "Full-Cycle Production",
+        "description": "From pre-production to post-production support."
+      }
+    }
+  }
+  

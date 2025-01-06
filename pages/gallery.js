@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "../app/components/Navbar";
 import "./LocationPage.css"; // Ensure the file path is correct
-
+import { useTranslation } from "react-i18next";
 const LocationPage = () => {
+  const { t } = useTranslation("gallery");
   const [activeIndex, setActiveIndex] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null); // State for selected image
 
@@ -29,8 +30,12 @@ const LocationPage = () => {
     { src: "30.jpg", tags: ["Mountain"], title: "Khinalig" },
   ];
 
-  const filters = ["All", "History", "Village", "Mountain"];
-
+  const filters = [
+    t("filters.all"),
+    t("filters.history"),
+    t("filters.village"),
+    t("filters.mountain"),
+  ];
   const filteredImages =
     activeIndex === 0 || activeIndex === null
       ? images
@@ -58,7 +63,7 @@ const LocationPage = () => {
       <div className="location-page">
         {/* Header Section */}
         <header className="header">
-          <h1>Locations</h1>
+          <h1>{t("header.title")}</h1>
         </header>
 
         {/* Filters Section */}

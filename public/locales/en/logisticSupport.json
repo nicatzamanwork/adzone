@@ -1,0 +1,28 @@
+{
+    "header": {
+      "title": "Logistic Support"
+    },
+    "intro": {
+      "iconAlt": "Logistic Support Icon",
+      "text": "Filmworks Azerbaijan provides comprehensive logistics support for smooth and successful production."
+    },
+    "services": {
+      "travelArrangements": {
+        "title": "Travel Arrangements",
+        "description": "We handle transportation logistics for crew members, equipment, and talent, ensuring smooth travel between locations."
+      },
+      "catering": {
+        "title": "Catering & Accommodation",
+        "description": "We can recommend or arrange local catering services and accommodations for your crew and talent."
+      },
+      "crewCoordination": {
+        "title": "Crew & Equipment Coordination",
+        "description": "We facilitate the logistics of getting your crew and equipment to the location, ensuring timely and efficient setup."
+      },
+      "parkingManagement": {
+        "title": "Parking & Traffic Management",
+        "description": "We plan parking arrangements for large crews or vehicles, manage traffic flow around the location, and coordinate with local authorities if necessary."
+      }
+    }
+  }
+  

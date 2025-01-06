@@ -1,0 +1,30 @@
+{
+  "form": {
+    "title": "GET IN TOUCH",
+    "header": "We’re here to assist you!",
+    "fields": {
+      "name": "Name *",
+      "email": "Email address *",
+      "phone": "Phone number *",
+      "message": "Message",
+      "consent": "I allow this website to store my submission so they can respond to my inquiry. *"
+    },
+    "submit": "SUBMIT"
+  },
+  "info": {
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "businessDays": "Business Days",
+    "days": {
+      "monday": "Monday, 9 AM - 6 PM",
+      "tuesday": "Tuesday, 9 AM - 6 PM",
+      "wednesday": "Wednesday, 9 AM - 6 PM",
+      "thursday": "Thursday, 9 AM - 6 PM",
+      "friday": "Friday, 9 AM - 6 PM",
+      "saturday": "Saturday, Closed",
+      "sunday": "Sunday, Closed"
+    }
+  }
+}

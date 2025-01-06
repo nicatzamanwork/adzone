@@ -1,9 +1,14 @@
+"use client";
+
 import React from "react";
 import Navbar from "../app/components/Navbar";
 import Contact from "../app/components/Contact";
 import InternalServiceLocation from "../app/components/InternalServicesLocation";
+import { useTranslation } from "react-i18next";
 
 const InternalService = () => {
+  const { t } = useTranslation("locationScouting");
+
   return (
     <>
       <Navbar />
@@ -13,7 +18,7 @@ const InternalService = () => {
       >
         <div className="internal-header-overlay">
           <div className="internal-header-content">
-            <h1>Location Scouting</h1>
+            <h1>{t("header.title")}</h1>
           </div>
         </div>
       </header>
@@ -22,41 +27,34 @@ const InternalService = () => {
           <div className="internal-service-item">
             <img
               src="/images/ancient/road.png"
-              alt="Location Scouting Icon"
+              alt={t("services.item1.iconAlt")}
               className="internal-service-icon"
             />
-            <h3>Initial Consultation</h3>
-            <p>
-              We listen to your vision, project goals, and budget to provide
-              tailored location recommendations.
-            </p>
-          </div>
-
-          <div className="internal-service-item">
-            <h3>
-              Location Scouting for Film, TV, Music Videos, and Commercials
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.item1.title")}
             </h3>
-            <p>
-              Whether it’s a city street, a secluded forest, or a modern office,
-              we find the perfect backdrop for your scene and ensure the ideal
-              space to tell your visual story.
-            </p>
+            <p>{t("services.item1.description")}</p>
           </div>
 
           <div className="internal-service-item">
-            <h3>Site Visits</h3>
-            <p>
-              We schedule visits and offer detailed reports and photos of
-              potential locations.
-            </p>
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.item2.title")}
+            </h3>
+            <p>{t("services.item2.description")}</p>
           </div>
 
           <div className="internal-service-item">
-            <h3>Film Permits</h3>
-            <p>
-              We handle location permits, paperwork, and logistical details to
-              ensure a smooth shoot day.
-            </p>
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.item3.title")}
+            </h3>
+            <p>{t("services.item3.description")}</p>
+          </div>
+
+          <div className="internal-service-item">
+            <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+              {t("services.item4.title")}
+            </h3>
+            <p>{t("services.item4.description")}</p>
           </div>
         </div>
       </section>

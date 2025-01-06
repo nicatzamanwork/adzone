@@ -2,8 +2,11 @@
 
 import React, { useState } from "react";
 import "../components/styles/Contact.css";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation("contact"); // Use 'contact' namespace
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,8 +14,6 @@ const ContactForm = () => {
     message: "",
     consent: false,
   });
-
-  const [status, setStatus] = useState(null); // For handling submission status
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -24,10 +25,8 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Ensure consent is checked before submission
     if (!formData.consent) {
-      alert("You must consent to submit the form.");
+      alert(t("form.fields.consent")); // Translated consent message
       return;
     }
 
@@ -42,29 +41,19 @@ const ContactForm = () => {
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
-            phoneNumber: formData.phoneNumber, // Correct field for the backend
+            phoneNumber: formData.phoneNumber,
             message: formData.message,
           }),
         }
       );
 
       if (response.ok) {
-        setStatus("success");
-        setFormData({
-          name: "",
-          email: "",
-          phoneNumber: "",
-          message: "",
-          consent: false,
-        });
-        alert("Your message has been sent successfully!");
+        alert(t("form.successMessage")); // Add success translation
       } else {
-        setStatus("error");
-        alert("There was an error submitting your message. Please try again.");
+        alert(t("form.errorMessage")); // Add error translation
       }
     } catch (error) {
-      setStatus("error");
-      alert("An unexpected error occurred. Please try again later.");
+      alert(t("form.unexpectedError")); // Add unexpected error translation
     }
   };
 
@@ -72,12 +61,10 @@ const ContactForm = () => {
     <div className="contact-container" id="contact">
       <div className="contact-form-left">
         <form className="contact-form" onSubmit={handleSubmit}>
-          <h5 className="form-title">GET IN TOUCH</h5>
-          <h2 className="form-header">We’re here to assist you!</h2>
+          <h5 className="form-title">{t("form.title")}</h5>
+          <h2 className="form-header">{t("form.header")}</h2>
 
-          <label htmlFor="name" style={{ paddingTop: "10px" }}>
-            Name *
-          </label>
+          <label htmlFor="name">{t("form.fields.name")}</label>
           <input
             type="text"
             id="name"
@@ -88,7 +75,7 @@ const ContactForm = () => {
             required
           />
 
-          <label htmlFor="email">Email address *</label>
+          <label htmlFor="email">{t("form.fields.email")}</label>
           <input
             type="email"
             id="email"
@@ -99,18 +86,18 @@ const ContactForm = () => {
             required
           />
 
-          <label htmlFor="phoneNumber">Phone number *</label>
+          <label htmlFor="phoneNumber">{t("form.fields.phone")}</label>
           <input
             type="tel"
             id="phoneNumber"
-            name="phoneNumber" // Corrected to match formData property
+            name="phoneNumber"
             placeholder="555-555-5555"
             value={formData.phoneNumber}
             onChange={handleChange}
             required
           />
 
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">{t("form.fields.message")}</label>
           <textarea
             id="message"
             name="message"
@@ -129,26 +116,25 @@ const ContactForm = () => {
               required
             />
             <label htmlFor="consent" style={{ marginLeft: "5px" }}>
-              I allow this website to store my submission so they can respond to
-              my inquiry. *
+              {t("form.fields.consent")}
             </label>
           </div>
 
           <button type="submit" className="submit-button">
-            SUBMIT
+            {t("form.submit")}
           </button>
         </form>
       </div>
 
       <div className="contact-info-right">
-        <h2>Contact</h2>
+        <h2>{t("info.contact")}</h2>
         <p>
           <strong>
             <a
               href="mailto:info@adzone.az"
               style={{ textDecoration: "underline", color: "inherit" }}
             >
-              Email: info@adzone.az
+              {t("info.email")}: info@adzone.az
             </a>
           </strong>
         </p>
@@ -159,26 +145,26 @@ const ContactForm = () => {
               href="tel:+994102554396"
               style={{ textDecoration: "underline", color: "inherit" }}
             >
-              Phone: +994102554396
+              {t("info.phone")}: +994102554396
             </a>
           </strong>
         </p>
 
         <p>
-          <strong>Address:</strong> 69E Uzeyir Hajibeyli street, Baku,
-          Azerbaijan
+          <strong>{t("info.address")}:</strong> 69E Uzeyir Hajibeyli street,
+          Baku, Azerbaijan
         </p>
+
         <p>
-          <strong>Business Days:</strong>
+          <strong>{t("info.businessDays")}:</strong>
         </p>
-        <br />
-        <p> Monday, 9 AM - 6 PM</p>
-        <p> Tuesday, 9 AM - 6 PM</p>
-        <p> Wednesday, 9 AM - 6 PM</p>
-        <p> Thursday, 9 AM - 6 PM</p>
-        <p> Friday, 9 AM - 6 PM</p>
-        <p> Saturday, Closed</p>
-        <p> Sunday, Closed</p>
+        <p>{t("info.days.monday")}</p>
+        <p>{t("info.days.tuesday")}</p>
+        <p>{t("info.days.wednesday")}</p>
+        <p>{t("info.days.thursday")}</p>
+        <p>{t("info.days.friday")}</p>
+        <p>{t("info.days.saturday")}</p>
+        <p>{t("info.days.sunday")}</p>
       </div>
     </div>
   );

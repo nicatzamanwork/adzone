@@ -1,13 +1,17 @@
+"use client";
+
 import React from "react";
 import Navbar from "../app/components/Navbar"; // Ensure the Navbar is imported
 import Contact from "../app/components/Contact";
 import InternalServiceLogistic from "../app/components/InternalServicesLogistic";
+import { useTranslation } from "react-i18next";
 import "../app/components/styles/About.css";
 import "../app/components/styles/Blog.css";
 import "../app/components/styles/Services.css";
-import Link from "next/link";
 
 const Blog = () => {
+  const { t } = useTranslation("logisticSupport");
+
   return (
     <>
       <Navbar />
@@ -17,7 +21,7 @@ const Blog = () => {
       >
         <div className="header-overlay">
           <div className="header-content">
-            <h1>Logistic Support</h1>
+            <h1>{t("header.title")}</h1>
           </div>
         </div>
       </header>
@@ -26,46 +30,30 @@ const Blog = () => {
           <div className="service-intro">
             <img
               src="/images/ancient/logisticsupportred.png"
-              alt="Location Scouting Icon"
+              alt={t("intro.iconAlt")}
               className="internal-service-icon"
             />
-            <p>
-              Filmworks Azerbaijan provides comprehensive logistics support for
-              smooth and successful production.
-            </p>
+            <p>{t("intro.text")}</p>
           </div>
 
           <div className="service-item">
-            <h3>Travel Arrangements</h3>
-            <p>
-              We handle transportation logistics for crew members, equipment,
-              and talent, ensuring smooth travel between locations.
-            </p>
+          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.travelArrangements.title")}</h3>
+            <p>{t("services.travelArrangements.description")}</p>
           </div>
 
           <div className="service-item">
-            <h3>Catering & Accommodation</h3>
-            <p>
-              We can recommend or arrange local catering services and
-              accommodations for your crew and talent.
-            </p>
+          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.catering.title")}</h3>
+            <p>{t("services.catering.description")}</p>
           </div>
 
           <div className="service-item">
-            <h3>Crew & Equipment Coordination</h3>
-            <p>
-              We facilitate the logistics of getting your crew and equipment to
-              the location, ensuring timely and efficient setup.
-            </p>
+          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.crewCoordination.title")}</h3>
+            <p>{t("services.crewCoordination.description")}</p>
           </div>
 
           <div className="service-item">
-            <h3>Parking & Traffic Management</h3>
-            <p>
-              We plan parking arrangements for large crews or vehicles, manage
-              traffic flow around the location, and coordinate with local
-              authorities if necessary.
-            </p>
+          <h3 style={{ marginTop: "2rem", marginBottom: "1rem" }}>{t("services.parkingManagement.title")}</h3>
+            <p>{t("services.parkingManagement.description")}</p>
           </div>
         </div>
       </section>

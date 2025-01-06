@@ -1,0 +1,72 @@
+{
+    "title": "How to Film in the Land of Fire",
+    "headerImageAlt": "Rich Cultural Heritage",
+    "whyChoose": {
+      "title": "Why Choose Azerbaijan for Filming?",
+      "text1": "Azerbaijan’s appeal lies in its diversity. The country seamlessly blends ancient and modern worlds, offering everything from prehistoric petroglyphs to cutting-edge architecture. Whether you’re looking for medieval streets, grand palaces, surreal natural phenomena, or sleek urban skylines, Azerbaijan delivers.",
+      "text2": "Its strategic location at the crossroads of Europe and Asia, coupled with government support for the film industry, makes it a rising star in global cinema."
+    },
+    "steps": {
+      "planLocations": {
+        "title": "Step 1: Plan Your Locations",
+        "text": "To film in Azerbaijan, it’s essential to research and plan locations based on your project’s needs. Here are some standout filming spots:",
+        "historicalSites": {
+          "title": "Historical Sites",
+          "gobustan": { "title": "Gobustan National Park", "description": "Home to ancient petroglyphs and unique rock formations, perfect for documentaries, historical dramas, or sci-fi visuals." },
+          "icherisheher": { "title": "Icherisheher (Old City)", "description": "A UNESCO World Heritage Site in Baku, offering narrow cobblestone streets, the Maiden Tower, and the Palace of the Shirvanshahs for period films or atmospheric settings." },
+          "ateshgah": { "title": "Ateshgah (Fire Temple)", "description": "One of the most fascinating locations for historical content, known for its rich history and cultural significance." }
+        },
+        "naturalWonders": {
+          "title": "Natural Wonders",
+          "khizi": { "title": "The Khizi Mountains", "description": "Their otherworldly landscape makes them ideal for sci-fi or futuristic films." },
+          "mudVolcanoes": { "title": "Mud Volcanoes", "description": "Azerbaijan has the world’s largest concentration of these natural phenomena, offering surreal, alien-like landscapes." },
+          "caucasus": { "title": "Caucasus Mountains", "description": "Stunning vistas and traditional villages like Khinalig make this region perfect for nature-focused storytelling." }
+        },
+        "modernMarvels": {
+          "title": "Modern Marvels",
+          "heydarCenter": { "title": "Heydar Aliyev Center", "description": "A futuristic architectural masterpiece by Zaha Hadid, ideal for avant-garde or sci-fi scenes." },
+          "flameTowers": { "title": "Flame Towers", "description": "Illuminating the skyline with fiery LED displays, adding a dramatic modern touch to urban scenes." },
+          "crescentBay": { "title": "Crescent Bay", "description": "A blend of modern architecture and luxury, offering a visually captivating setting." }
+        }
+      },
+      "obtainPermits": {
+        "title": "Step 2: Obtain Filming Permits",
+        "text": "To film in Azerbaijan, you’ll need to secure the necessary permits. The process is straightforward, especially for international filmmakers. Here's what to do:",
+        "steps": {
+          "1": "Identify key locations and note any restrictions.",
+          "2": "Apply for permits with local authorities or hire a production service company.",
+          "3": "Include drone usage clearance if required."
+        }
+      },
+      "partnerLocal": {
+        "title": "Step 3: Partner with Local Production Services",
+        "text": "Collaborating with local production companies can streamline your filmmaking process. They can assist with location scouting, securing permits, equipment rental, hiring local crew, and navigating cultural differences."
+      },
+      "embraceCulture": {
+        "title": "Step 4: Embrace the Local Culture",
+        "text": "Filming in Azerbaijan isn’t just about visuals—it’s about immersing yourself in its culture. Engage with locals and enjoy traditional cuisine to inspire your creative process."
+      },
+      "prepareClimate": {
+        "title": "Step 5: Prepare for Climate and Terrain",
+        "text": "Azerbaijan’s diverse geography means varying climates and terrains:",
+        "points": {
+          "urban": { "title": "Urban areas", "description": "Hot summers and mild winters; pack accordingly for city shoots." },
+          "mountains": { "title": "Mountains", "description": "Cold and snowy winters; ensure proper gear for high-altitude filming." },
+          "deserts": { "title": "Deserts and volcanic areas", "description": "Prepare for heat and dry conditions." }
+        }
+      },
+      "focusPost": {
+        "title": "Step 6: Focus on Post-Production Needs",
+        "text": "Azerbaijan offers modern post-production facilities, but consider bringing specialized equipment or collaborating with local editors for authenticity."
+      },
+      "respectEnvironment": {
+        "title": "Step 7: Respect the Environment and Heritage",
+        "text": "Preserve the integrity of natural and cultural sites by following all regulations and guidelines to avoid damage."
+      }
+    },
+    "landOfFire": {
+      "title": "Why the Land of Fire is Worth It",
+      "text": "Filming in Azerbaijan is not just about capturing stunning visuals—it’s about telling a story enriched by the country’s culture, history, and natural beauty. Proper planning and local partnerships can elevate your project to new heights."
+    }
+  }
+  

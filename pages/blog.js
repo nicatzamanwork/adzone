@@ -1,26 +1,26 @@
+"use client";
+
 import "../app/components/styles/Navbar.css";
 import "../app/components/styles/Locations.css";
 import Link from "next/link";
 import Navbar from "../app/components/Navbar";
+import { useTranslation } from "react-i18next";
 
 const Locations = () => {
+  const { t } = useTranslation("location"); // Use the 'locations' namespace for this page
+
   return (
     <>
       <Navbar />
       <section id="locations">
-        <h2>Blogs</h2>
+        <h2>{t("title")}</h2>
         <div className="locations-container">
           {/* Card 1 */}
           <div className="location-card">
             <Link href="/howtofilm-blog">
-              <img
-                src="/images/Ateshgah (15).jpg"
-                alt="Rich Cultural Heritage"
-              />
+              <img src="/images/Ateshgah (15).jpg" alt={t("card1.alt")} />
               <div className="overlay">
-                <h3 style={{ color: "white" }}>
-                  How to Film in the Land of Fire
-                </h3>
+                <h3 style={{ color: "white" }}>{t("card1.title")}</h3>
               </div>
             </Link>
           </div>
@@ -28,12 +28,9 @@ const Locations = () => {
           {/* Card 2 */}
           <div className="location-card">
             <Link href="/landscape-blog">
-              <img src="/images/land.JPG" alt="Cost-effective Filming" />
+              <img src="/images/land.JPG" alt={t("card2.alt")} />
               <div className="overlay">
-                <h3 style={{ color: "white" }}>
-                  From Petroglyphs to Palaces: Exploring Azerbaijan’s Cinematic
-                  Landscapes
-                </h3>
+                <h3 style={{ color: "white" }}>{t("card2.title")}</h3>
               </div>
             </Link>
           </div>
@@ -41,14 +38,9 @@ const Locations = () => {
           {/* Card 3 */}
           <div className="location-card">
             <Link href="/tenbestfilming-blog">
-              <img
-                src="/images/Khinalig (12) (1).jpg"
-                alt="Diverse and Unique Locations"
-              />
+              <img src="/images/Khinalig (12) (1).jpg" alt={t("card3.alt")} />
               <div className="overlay">
-                <h3 style={{ color: "white" }}>
-                  10 Best Filming Locations in Azerbaijan
-                </h3>
+                <h3 style={{ color: "white" }}>{t("card3.title")}</h3>
               </div>
             </Link>
           </div>
@@ -56,14 +48,9 @@ const Locations = () => {
           {/* Card 4 */}
           <div className="location-card">
             <Link href="/spotlight-blog">
-              <img
-                src="/images/bakunight.jpg"
-                alt="High Filming Accessibility"
-              />
+              <img src="/images/bakunight.jpg" alt={t("card4.alt")} />
               <div className="overlay">
-                <h3 style={{ color: "white" }}>
-                  Spotlight on Baku: The Perfect Urban Filming Destination
-                </h3>
+                <h3 style={{ color: "white" }}>{t("card4.title")}</h3>
               </div>
             </Link>
           </div>

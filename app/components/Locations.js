@@ -1,20 +1,24 @@
+"use client";
+
 import "../components/styles/Locations.css";
 import "../components/styles/About.css";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
 const Locations = () => {
+  const { t } = useTranslation("locations"); // Use 'locations' namespace
+
   return (
     <section id="locations">
-      <h5 className="about-subtitle">WHY AZERBAIJAN</h5>
-      <h2>
-        Experience diverse landscapes and rich culture for your next project
-      </h2>
+      <h5 className="about-subtitle">{t("subtitle")}</h5>
+      <h2>{t("title")}</h2>
       <div className="locations-container">
         {/* Card 1: Overlay on the Image */}
         <div className="location-card">
           <Link href="/richcultural">
-            <img src="/images/7.jpg" alt="Rich Cultural Heritage" />
+            <img src="/images/7.jpg" alt={t("richCulturalHeritage")} />
             <div className="overlay">
-              <h3 style={{ color: "white" }}>Rich Cultural Heritage</h3>
+              <h3 style={{ color: "white" }}>{t("richCulturalHeritage")}</h3>
             </div>
           </Link>
         </div>
@@ -24,10 +28,10 @@ const Locations = () => {
           <Link href="/costeffective">
             <img
               src="/images/cost-effective.jpeg"
-              alt="Cost-effective Filming"
+              alt={t("costEffectiveFilming")}
             />
             <div className="overlay">
-              <h3 style={{ color: "white" }}>Cost-effective Filming</h3>
+              <h3 style={{ color: "white" }}>{t("costEffectiveFilming")}</h3>
             </div>
           </Link>
         </div>
@@ -37,10 +41,12 @@ const Locations = () => {
           <Link href="/diverselocations">
             <img
               src="/images/location.jpeg"
-              alt="Diverse and Unique Locations"
+              alt={t("diverseAndUniqueLocations")}
             />
             <div className="overlay">
-              <h3 style={{ color: "white" }}>Diverse and Unique Locations</h3>
+              <h3 style={{ color: "white" }}>
+                {t("diverseAndUniqueLocations")}
+              </h3>
             </div>
           </Link>
         </div>
@@ -50,10 +56,10 @@ const Locations = () => {
           <Link href="/highfilmin">
             <img
               src="/images/High access.jpg"
-              alt="High Filming Accessibility"
+              alt={t("highFilmingAccessibility")}
             />
             <div className="overlay">
-              <h3 style={{ color: "white" }}>High Filming Accessibility</h3>
+              <h3 style={{ color: "white" }}>{t("highFilmingAccessibility")}</h3>
             </div>
           </Link>
         </div>

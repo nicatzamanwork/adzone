@@ -1,16 +1,22 @@
+"use client";
+
 import "../components/styles/InternalService.css"; // Import global CSS
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+
 export default function GalleryMain() {
+  const { t } = useTranslation("Internal_ServicesLogistic");
+
   const cards = [
     {
-      title: "Location Scouting",
-      description: "Experience serene forest locations for your scenes.",
+      title: t("cards.locationScouting.title"),
+      description: t("cards.locationScouting.description"),
       image: "/images/Ateshgah.jpg",
       link: "/location-scouting",
     },
     {
-      title: "Full-cycle Production",
-      description: "Capture the energy of vibrant urban locations.",
+      title: t("cards.fullCycleProduction.title"),
+      description: t("cards.fullCycleProduction.description"),
       image: "/images/fullscale.jpg",
       link: "/full-cycle-video",
     },

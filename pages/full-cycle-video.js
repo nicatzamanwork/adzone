@@ -1,12 +1,17 @@
+"use client";
+
 import React from "react";
-import Navbar from "../app/components/Navbar"; // Ensure the Navbar is imported
+import Navbar from "../app/components/Navbar";
 import Contact from "../app/components/Contact";
 import InternalServiceFullCycle from "../app/components/InternalServicesFullCycle";
+import { useTranslation } from "react-i18next";
 import "../app/components/styles/About.css";
 import "../app/components/styles/Blog.css";
 import "../app/components/styles/Services.css";
 
 const Blog = () => {
+  const { t } = useTranslation("fullCycleProduction");
+
   return (
     <>
       <Navbar />
@@ -16,102 +21,102 @@ const Blog = () => {
       >
         <div className="header-overlay">
           <div className="header-content">
-            <h1>Full-cycle Production</h1>
+            <h1>{t("header.title")}</h1>
           </div>
         </div>
       </header>
       <section className="services-section-internal" id="services">
         <div className="services-content">
-          <p className="intro-text">
-            With a team of experienced filmmakers, creatives, and technical
-            experts, Filmworks Azerbaijan can help you to produce high-quality
-            films, commercials, music videos, and branded content.
-          </p>
+          <p className="intro-text">{t("intro.text")}</p>
 
-          <div className="service-category">
+          <div
+            className="service-category"
+            style={{ marginTop: "2rem", marginBottom: "1rem" }}
+          >
             <img
               src="/images/ancient/fullpre.png"
-              alt="Pre-Production Icon"
+              alt={t("services.preProduction.iconAlt")}
               className="internal-service-icon"
             />
-            <h3>Pre-production service</h3>
+            <h3>{t("services.preProduction.title")}</h3>
             <ul className="service-list">
               <li>
-                <strong>Script Development:</strong> We work with you to develop
-                and refine your script, ensuring that it aligns with your vision
-                and goals.
+                <strong>
+                  {t("services.preProduction.scriptDevelopment.title")}:
+                </strong>{" "}
+                {t("services.preProduction.scriptDevelopment.description")}
               </li>
               <li>
-                <strong>Concept & Storyboarding:</strong> From brainstorming to
-                detailed storyboards, we map out every shot and sequence to
-                visualize the project before filming begins.
+                <strong>
+                  {t("services.preProduction.storyboarding.title")}:
+                </strong>{" "}
+                {t("services.preProduction.storyboarding.description")}
               </li>
               <li>
-                <strong>Casting:</strong> We assist with casting talent, from
-                lead actors to extras, ensuring you get the perfect fit for your
-                project.
+                <strong>{t("services.preProduction.casting.title")}:</strong>{" "}
+                {t("services.preProduction.casting.description")}
               </li>
               <li>
-                <strong>Provision of Equipment for Filming:</strong> We source
-                any necessary equipment for you to ensure the shooting process
-                goes exactly as you planned.
+                <strong>{t("services.preProduction.equipment.title")}:</strong>{" "}
+                {t("services.preProduction.equipment.description")}
               </li>
               <li>
-                <strong>Search for Film Crew:</strong> We gather a film crew
-                consisting of all the necessary professionals for your project.
+                <strong>{t("services.preProduction.crew.title")}:</strong>{" "}
+                {t("services.preProduction.crew.description")}
               </li>
               <li>
-                <strong>Budgeting & Scheduling:</strong> Our team creates
-                detailed production budgets and schedules to ensure your project
-                stays on track and within budget.
+                <strong>{t("services.preProduction.budgeting.title")}:</strong>{" "}
+                {t("services.preProduction.budgeting.description")}
               </li>
               <li>
-                <strong>Set Design & Production Planning:</strong> From set
-                construction to wardrobe and props, we ensure every detail is
-                planned for seamless execution.
+                <strong>{t("services.preProduction.setDesign.title")}:</strong>{" "}
+                {t("services.preProduction.setDesign.description")}
               </li>
             </ul>
           </div>
 
-          <div className="service-category">
+          <div
+            className="service-category"
+            style={{ marginTop: "2rem", marginBottom: "1rem" }}
+          >
             <img
               src="/images/ancient/preproduction.png"
-              alt="Production Icon"
+              alt={t("services.production.iconAlt")}
               className="internal-service-icon"
             />
-            <h3>Production service</h3>
+            <h3>{t("services.production.title")}</h3>
             <ul className="service-list">
               <li>
-                <strong>Filming:</strong> Our experienced crew brings your
-                script to life using state-of-the-art equipment. We handle all
-                aspects of filming, from lighting and cinematography to
-                direction and sound.
+                <strong>{t("services.production.filming.title")}:</strong>{" "}
+                {t("services.production.filming.description")}
               </li>
               <li>
-                <strong>Cinematography:</strong> We offer creative and technical
-                expertise in camera work, lighting, and shot composition to
-                capture stunning visuals.
+                <strong>
+                  {t("services.production.cinematography.title")}:
+                </strong>{" "}
+                {t("services.production.cinematography.description")}
               </li>
               <li>
-                <strong>On-Set Coordination:</strong> Our team manages
-                day-to-day operations, ensuring everything runs smoothly, from
-                scheduling to coordinating with talent and crew.
+                <strong>{t("services.production.onSet.title")}:</strong>{" "}
+                {t("services.production.onSet.description")}
               </li>
             </ul>
           </div>
 
-          <div className="service-category">
+          <div
+            className="service-category"
+            style={{ marginTop: "2rem", marginBottom: "1rem" }}
+          >
             <img
               src="/images/ancient/production.png"
-              alt="Post-Production Icon"
+              alt={t("services.postProduction.iconAlt")}
               className="internal-service-icon"
             />
-            <h3>Post-Production Services</h3>
+            <h3>{t("services.postProduction.title")}</h3>
             <ul className="service-list">
               <li>
-                <strong>Editing:</strong> Our talented editors craft your story
-                by cutting and assembling the footage into a cohesive narrative
-                that aligns with your vision.
+                <strong>{t("services.postProduction.editing.title")}:</strong>{" "}
+                {t("services.postProduction.editing.description")}
               </li>
             </ul>
           </div>

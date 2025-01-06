@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "home": "Azerbaijan",
+    "about": "About",
+    "services": "Services",
+    "locations": "Locations",
+    "blog": "Blog",
+    "catalog": "Catalog",
+    "contact": "Contact"
+  }
+}

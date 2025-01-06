@@ -1,0 +1,67 @@
+{
+    "header": {
+      "title": "Full-cycle Production"
+    },
+    "intro": {
+      "text": "With a team of experienced filmmakers, creatives, and technical experts, Filmworks Azerbaijan can help you to produce high-quality films, commercials, music videos, and branded content."
+    },
+    "services": {
+      "preProduction": {
+        "iconAlt": "Pre-Production Icon",
+        "title": "Pre-production service",
+        "scriptDevelopment": {
+          "title": "Script Development",
+          "description": "We work with you to develop and refine your script, ensuring that it aligns with your vision and goals."
+        },
+        "storyboarding": {
+          "title": "Concept & Storyboarding",
+          "description": "From brainstorming to detailed storyboards, we map out every shot and sequence to visualize the project before filming begins."
+        },
+        "casting": {
+          "title": "Casting",
+          "description": "We assist with casting talent, from lead actors to extras, ensuring you get the perfect fit for your project."
+        },
+        "equipment": {
+          "title": "Provision of Equipment for Filming",
+          "description": "We source any necessary equipment for you to ensure the shooting process goes exactly as you planned."
+        },
+        "crew": {
+          "title": "Search for Film Crew",
+          "description": "We gather a film crew consisting of all the necessary professionals for your project."
+        },
+        "budgeting": {
+          "title": "Budgeting & Scheduling",
+          "description": "Our team creates detailed production budgets and schedules to ensure your project stays on track and within budget."
+        },
+        "setDesign": {
+          "title": "Set Design & Production Planning",
+          "description": "From set construction to wardrobe and props, we ensure every detail is planned for seamless execution."
+        }
+      },
+      "production": {
+        "iconAlt": "Production Icon",
+        "title": "Production service",
+        "filming": {
+          "title": "Filming",
+          "description": "Our experienced crew brings your script to life using state-of-the-art equipment."
+        },
+        "cinematography": {
+          "title": "Cinematography",
+          "description": "We offer creative and technical expertise in camera work, lighting, and shot composition to capture stunning visuals."
+        },
+        "onSet": {
+          "title": "On-Set Coordination",
+          "description": "Our team manages day-to-day operations, ensuring everything runs smoothly."
+        }
+      },
+      "postProduction": {
+        "iconAlt": "Post-Production Icon",
+        "title": "Post-Production Services",
+        "editing": {
+          "title": "Editing",
+          "description": "Our talented editors craft your story by cutting and assembling the footage into a cohesive narrative."
+        }
+      }
+    }
+  }
+  
