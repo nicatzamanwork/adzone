@@ -7,7 +7,11 @@
       "history": "History",
       "village": "Village",
       "mountain": "Mountain",
-      "desert": "Desert"
+      "desert": "Desert",
+      "water": "Water",
+      "modern": "Modern",
+      "park":"Park",
+      "view":"View"
     }
   }
   

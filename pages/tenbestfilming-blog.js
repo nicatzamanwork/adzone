@@ -25,6 +25,7 @@ const TenBestFilm = () => {
             />
           </header>
           <article className="article">
+            <p> {t("locations.0.text")}</p>
             <h3>{t("locations.0.title")}</h3>
             <p>{t("locations.0.description")}</p>
             {t("locations.0.highlight") && (

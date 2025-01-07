@@ -60,6 +60,11 @@
         "editing": {
           "title": "Editing",
           "description": "Our talented editors craft your story by cutting and assembling the footage into a cohesive narrative."
+        },
+        "sound":{
+            "title": "Sound Design and Mixing",
+          "description": "We bring your film to life with custom sound design that delivers clarity and depth."
+
         }
       }
     }

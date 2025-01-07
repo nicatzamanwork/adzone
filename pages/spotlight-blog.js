@@ -25,6 +25,7 @@ const Spotlight = () => {
             />
           </header>
           <article className="article">
+            <p>{t("fusionOfOldAndNew.text3")}</p>
             <h3>{t("fusionOfOldAndNew.title")}</h3>
             <p>{t("fusionOfOldAndNew.text1")}</p>
             <p>{t("fusionOfOldAndNew.text2")}</p>
