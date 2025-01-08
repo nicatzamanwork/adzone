@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../app/components/Navbar";
 import "./LocationPage.css"; // Ensure the file path is correct
 import { useTranslation } from "react-i18next";
+
 const LocationPage = () => {
   const { t } = useTranslation("gallery");
   const [activeIndex, setActiveIndex] = useState(null);
@@ -35,6 +36,10 @@ const LocationPage = () => {
     t("filters.history"),
     t("filters.village"),
     t("filters.mountain"),
+    t("filters.water"),
+    t("filters.modern"),
+    t("filters.park"),
+    t("filters.view"),
   ];
   const filteredImages =
     activeIndex === 0 || activeIndex === null
@@ -66,8 +71,10 @@ const LocationPage = () => {
           <h1>{t("header.title")}</h1>
         </header>
 
-        {/* Filters Section */}
+        
         <div className="filters">
+          {/* Go Back Link */}
+
           {filters.map((filter, index) => (
             <button
               key={index}
@@ -115,6 +122,15 @@ const LocationPage = () => {
         )}
       </div>
       <style jsx>{`
+        .go-back-link {
+          display: inline-block;
+          margin: 1rem;
+          font-size: 1rem;
+          color: blue;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
         .modal {
           position: fixed;
           top: 0;
