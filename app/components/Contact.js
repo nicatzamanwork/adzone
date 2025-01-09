@@ -134,7 +134,7 @@ const ContactForm = () => {
               href="mailto:info@adzone.az"
               style={{ textDecoration: "underline", color: "inherit" }}
             >
-              {t("info.email")}: info@adzone.az
+              {t("info.email")}: info@filmworks.az
             </a>
           </strong>
         </p>

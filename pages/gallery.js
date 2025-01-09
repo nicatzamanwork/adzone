@@ -29,6 +29,74 @@ const LocationPage = () => {
     { src: "28.jpg", tags: ["Mountain"], title: "Khinalig" },
     { src: "29.jpg", tags: ["Mountain"], title: "Khinalig" },
     { src: "30.jpg", tags: ["Mountain"], title: "Khinalig" },
+    { src: "Baksovet_1.jpeg", tags: ["Historical"], title: "Baksovet" },
+    { src: "Baksovet_2.jpeg", tags: ["Historical"], title: "Baksovet" },
+    { src: "Chiragli_2.jpeg", tags: ["Historical"], title: "Chiragli" },
+    { src: "Chiragli.jpeg", tags: ["Historical"], title: "Chiragli" },
+    { src: "Dastafur.jpeg", tags: ["Nature"], title: "Dastafur" },
+    { src: "fontain square_1.jpeg", tags: ["City"], title: "Fountain Square" },
+    { src: "Gobustan.jpg", tags: ["Historical"], title: "Gobustan" },
+    { src: "Icerisheher_1.jpeg", tags: ["Historical"], title: "Icherisheher" },
+    { src: "Icerisheher_2.jpeg", tags: ["Historical"], title: "Icherisheher" },
+    { src: "Icerisheher_3.jpeg", tags: ["Historical"], title: "Icherisheher" },
+    { src: "Icerisheher_4.jpeg", tags: ["Historical"], title: "Icherisheher" },
+    { src: "Icerisheher_5.jpeg", tags: ["Historical"], title: "Icherisheher" },
+    { src: "Icerisheher_6.jpeg", tags: ["Historical"], title: "Icherisheher" },
+    { src: "Icheribazar_gah_1.jpeg", tags: ["Bazaar"], title: "Icheribazar" },
+    { src: "Icheribazar_gah_2.jpeg", tags: ["Bazaar"], title: "Icheribazar" },
+    { src: "Icheribazar_gah_3.jpeg", tags: ["Bazaar"], title: "Icheribazar" },
+    {
+      src: "Khizi mountain_1.jpeg",
+      tags: ["Mountain"],
+      title: "Khizi Mountain",
+    },
+    {
+      src: "Khizi mountain_2.jpeg",
+      tags: ["Mountain"],
+      title: "Khizi Mountain",
+    },
+    {
+      src: "Khizi mountain_3.jpeg",
+      tags: ["Mountain"],
+      title: "Khizi Mountain",
+    },
+    {
+      src: "Khizi mountain_4.jpeg",
+      tags: ["Mountain"],
+      title: "Khizi Mountain",
+    },
+    { src: "Mud volcanoes (14).jpg", tags: ["Nature"], title: "Mud Volcanoes" },
+    {
+      src: "Nizami mausoleum_1.jpeg",
+      tags: ["Historical"],
+      title: "Nizami Mausoleum",
+    },
+    {
+      src: "post-production.jpg",
+      tags: ["Post Production"],
+      title: "Post Production",
+    },
+    { src: "Qusar_1.jpeg", tags: ["Mountain"], title: "Qusar" },
+    { src: "Qusar_2.jpeg", tags: ["Mountain"], title: "Qusar" },
+    { src: "road.png", tags: ["Path"], title: "Road" },
+    { src: "Saint George.jpeg", tags: ["Historical"], title: "Saint George" },
+    { src: "Shahdag_1.jpeg", tags: ["Mountain"], title: "Shahdag" },
+    { src: "Shahdag_2.jpeg", tags: ["Mountain"], title: "Shahdag" },
+    { src: "Shahdag_3.jpeg", tags: ["Mountain"], title: "Shahdag" },
+    { src: "Soyuqbulag.jpeg", tags: ["Nature"], title: "Soyuqbulag" },
+    { src: "Torqovaya_2.jpeg", tags: ["City"], title: "Torqovaya" },
+    { src: "Torqovaya_3 (1).jpeg", tags: ["City"], title: "Torqovaya" },
+    { src: "Torqovaya_3.jpeg", tags: ["City"], title: "Torqovaya" },
+    { src: "Tufandag_1.jpeg", tags: ["Mountain"], title: "Tufandag" },
+    { src: "tufandag_2.jpeg", tags: ["Mountain"], title: "Tufandag" },
+    { src: "white city_Baku.jpeg", tags: ["City"], title: "White City, Baku" },
+    { src: "Дворец любви.jpeg", tags: ["Historical"], title: "Palace of Love" },
+    { src: "Филармония_2.jpeg", tags: ["Historical"], title: "Philharmonia" },
+    {
+      src: "Филармония_Баку.jpeg",
+      tags: ["Historical"],
+      title: "Philharmonia, Baku",
+    },
   ];
 
   const filters = [
@@ -71,7 +139,6 @@ const LocationPage = () => {
           <h1>{t("header.title")}</h1>
         </header>
 
-        
         <div className="filters">
           {/* Go Back Link */}
 

@@ -122,7 +122,7 @@ const Blog = () => {
             <ul className="service-list">
               <li>
                 <strong>{t("services.postProduction.sound.title")}:</strong>{" "}
-                {t("services.postProduction.editing.description")}
+                {t("services.postProduction.sound.description")}
               </li>
             </ul>
           </div>
