@@ -61,10 +61,10 @@ const EuropePage = () => {
   ];
 
   const filters = [
-    { key: "all", label: "All" },
-    { key: "History", label: "History" },
-    { key: "Modern", label: "Modern" },
-    { key: "Park", label: "Park" },
+    { key: "all",label: t("filters.all") },
+    { key: "History", label: t("filters.history") },
+    { key: "Modern", label: t("filters.modern") },
+    { key: "Park", label: t("filters.park") },
   ];
 
   const filteredImages =

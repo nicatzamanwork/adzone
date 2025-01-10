@@ -43,10 +43,10 @@ const NaturePage = () => {
   ];
 
   const filters = [
-    { key: "all", label: "All" },
-    { key: "Desert", label: "Desert" },
-    { key: "Mountain", label: "Mountain" },
-    { key: "Water", label: "Water" },
+    { key: "all", label: t("filters.all") },
+    { key: "Desert", label: t("filters.desert")},
+    { key: "Mountain", label: t("filters.mountain") },
+    { key: "Water", label: t("filters.water") },
   ];
 
   const filteredImages =

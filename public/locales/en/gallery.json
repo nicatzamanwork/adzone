@@ -14,15 +14,38 @@
     "view": "View"
   },
   "europe": {
-    "title": "Europe Locations"
+    "title": "Europe Locations",
+    "tags": {
+      "all": "All",
+      "history": "History",
+      "modern": "Modern",
+      "park": "Park"
+    }
   },
   "nature": {
-    "title": "Nature Locations"
+    "title": "Nature Locations",
+    "tags": {
+      "all": "All",
+      "desert": "Desert",
+      "mountain": "Mountain",
+      "water": "Water"
+    }
   },
   "ancient": {
-    "title": "Ancient Locations"
+    "title": "Ancient Locations",
+    "tags": {
+      "all": "All",
+      "history": "History",
+      "village": "Village"
+    }
   },
   "urban": {
-    "title": "Urban Locations"
+    "title": "Urban Locations",
+    "tags": {
+      "all": "All",
+      "view": "View",
+      "park": "Park",
+      "modern": "Modern"
+    }
   }
 }

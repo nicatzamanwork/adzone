@@ -149,9 +149,9 @@ const AncientPage = () => {
   ];
 
   const filters = [
-    { key: "all", label: "All" },
-    { key: "History", label: "History" },
-    { key: "Village", label: "Village" }, // Add images with this tag later
+    { key: "all", label: t("filters.all") },
+    { key: "History", label: t("filters.history") },
+    { key: "Village", label: t("filters.village") }, // Add images with this tag later
   ];
 
   const filteredImages =

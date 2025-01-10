@@ -73,10 +73,10 @@ const UrbanPage = () => {
   ];
 
   const filters = [
-    { key: "all", label: "All" },
-    { key: "History", label: "History" },
-    { key: "Modern", label: "Modern" },
-    { key: "View", label: "View" },
+    { key: "all", label: t("filters.all") },
+    { key: "History", label: t("filters.history") },
+    { key: "Modern", label: t("filters.modern") },
+    { key: "View", label: t("filters.view")},
   ];
 
   const filteredImages =
