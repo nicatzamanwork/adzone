@@ -132,7 +132,7 @@ const ContactForm = () => {
           <strong>
             <a
               href="mailto:info@adzone.az"
-              style={{ textDecoration: "underline", color: "inherit" }}
+              style={{  color: "inherit" }}
             >
               {t("info.email")}: info@filmworks.az
             </a>
@@ -143,7 +143,7 @@ const ContactForm = () => {
           <strong>
             <a
               href="tel:+994102554396"
-              style={{ textDecoration: "underline", color: "inherit" }}
+              style={{  color: "inherit" }}
             >
               {t("info.phone")}: +994102554396
             </a>

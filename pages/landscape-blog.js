@@ -58,13 +58,26 @@ const Petroglyphs = () => {
 
             <h2>{t("naturalWonders.title")}</h2>
             <ul>
-              <li>
-                <strong>{t("naturalWonders.list.0.title")}:</strong>{" "}
-                {t("naturalWonders.list.0.description")}
-              </li>
+              <li>{t("naturalWonders.list.0.description")}</li>
               <li>
                 <strong>{t("naturalWonders.list.1.title")}:</strong>{" "}
                 {t("naturalWonders.list.1.description")}
+              </li>
+              <li>
+                <strong>{t("naturalWonders.list.2.title")}:</strong>{" "}
+                {t("naturalWonders.list.2.description")}
+              </li>
+              <li>
+                <strong>{t("naturalWonders.list.3.title")}:</strong>{" "}
+                {t("naturalWonders.list.3.description")}
+              </li>
+              <li>
+                <strong>{t("naturalWonders.list.4.title")}:</strong>{" "}
+                {t("naturalWonders.list.4.description")}
+              </li>
+              <li>
+                <strong>{t("naturalWonders.list.5.title")}:</strong>{" "}
+                {t("naturalWonders.list.5.description")}
               </li>
             </ul>
 
