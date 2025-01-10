@@ -1,17 +1,28 @@
 {
-    "header": {
-      "title": "Locations"
-    },
-    "filters": {
-      "all": "All",
-      "history": "History",
-      "village": "Village",
-      "mountain": "Mountain",
-      "desert": "Desert",
-      "water": "Water",
-      "modern": "Modern",
-      "park":"Park",
-      "view":"View"
-    }
+  "header": {
+    "title": "Locations"
+  },
+  "filters": {
+    "all": "All",
+    "history": "History",
+    "village": "Village",
+    "mountain": "Mountain",
+    "desert": "Desert",
+    "water": "Water",
+    "modern": "Modern",
+    "park": "Park",
+    "view": "View"
+  },
+  "europe": {
+    "title": "Europe Locations"
+  },
+  "nature": {
+    "title": "Nature Locations"
+  },
+  "ancient": {
+    "title": "Ancient Locations"
+  },
+  "urban": {
+    "title": "Urban Locations"
   }
-  
+}

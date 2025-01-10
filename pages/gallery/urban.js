@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "../../app/components/Navbar"; // Adjust path if necessary
 import "../LocationPage.css"; // Ensure the CSS file is correctly linked
+import { useTranslation } from "react-i18next";
 
 const UrbanPage = () => {
+  const { t } = useTranslation("gallery");
   const [activeIndex, setActiveIndex] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -94,7 +96,7 @@ const UrbanPage = () => {
       <div className="location-page">
         {/* Header */}
         <header className="header">
-          <h1>Urban Locations</h1>
+          <h1>{t("urban.title")}</h1>
         </header>
 
         {/* Filters */}

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "../../app/components/Navbar"; // Adjust path if necessary
 import "../LocationPage.css"; // Ensure the CSS file is correctly linked
+import { useTranslation } from "react-i18next";
 
 const AncientPage = () => {
+  const { t } = useTranslation("gallery");
   const [activeIndex, setActiveIndex] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -153,10 +155,9 @@ const AncientPage = () => {
   ];
 
   const filteredImages =
-  activeIndex === null || filters[activeIndex].key === "all"
-    ? images
-    : images.filter((image) => image.tags.includes(filters[activeIndex].key));
-
+    activeIndex === null || filters[activeIndex].key === "all"
+      ? images
+      : images.filter((image) => image.tags.includes(filters[activeIndex].key));
 
   const handleFilterClick = (index) => setActiveIndex(index);
   const handleImageClick = (image) => setSelectedImage(image);
@@ -168,7 +169,7 @@ const AncientPage = () => {
       <div className="location-page">
         {/* Header */}
         <header className="header">
-          <h1>Ancient Locations</h1>
+          <h1>{t("ancient.title")}</h1>
         </header>
 
         {/* Filters */}
