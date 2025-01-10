@@ -71,14 +71,9 @@ const LocationPage = () => {
       tags: ["Historical"],
       title: "Nizami Mausoleum",
     },
-    {
-      src: "post-production.jpg",
-      tags: ["Post Production"],
-      title: "Post Production",
-    },
+
     { src: "Qusar_1.jpeg", tags: ["Mountain"], title: "Qusar" },
     { src: "Qusar_2.jpeg", tags: ["Mountain"], title: "Qusar" },
-    { src: "road.png", tags: ["Path"], title: "Road" },
     { src: "Saint George.jpeg", tags: ["Historical"], title: "Saint George" },
     { src: "Shahdag_1.jpeg", tags: ["Mountain"], title: "Shahdag" },
     { src: "Shahdag_2.jpeg", tags: ["Mountain"], title: "Shahdag" },
@@ -92,11 +87,6 @@ const LocationPage = () => {
     { src: "white city_Baku.jpeg", tags: ["City"], title: "White City, Baku" },
     { src: "Дворец любви.jpeg", tags: ["Historical"], title: "Palace of Love" },
     { src: "Филармония_2.jpeg", tags: ["Historical"], title: "Philharmonia" },
-    {
-      src: "Филармония_Баку.jpeg",
-      tags: ["Historical"],
-      title: "Philharmonia, Baku",
-    },
   ];
 
   const filters = [
