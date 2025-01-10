@@ -14,27 +14,28 @@ export default function GalleryMain() {
       title: t("cards.urban.title"),
       description: t("cards.urban.description"),
       image: "/images/Khinalig (12) (1).jpg",
-      link: "/gallery",
+      link: "/gallery/urban", // Link to Urban page
     },
     {
       title: t("cards.europe.title"),
       description: t("cards.europe.description"),
       image: "/images/Mud volcanoes (14).jpg",
-      link: "/gallery",
+      link: "/gallery/europe", // Link to Europe page
     },
     {
       title: t("cards.nature.title"),
       description: t("cards.nature.description"),
       image: "/images/Khinalig (21).jpg",
-      link: "/gallery",
+      link: "/gallery/nature", // Link to Nature page
     },
     {
       title: t("cards.ancient.title"),
       description: t("cards.ancient.description"),
       image: "/images/7 (1).jpg",
-      link: "/gallery",
+      link: "/gallery/ancient", // Link to Ancient page
     },
   ];
+  
 
   return (
     <>
