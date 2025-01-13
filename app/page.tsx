@@ -5,6 +5,7 @@ import Services from "../app/components/Services";
 import Contact from "../app/components/Contact";
 import About from "../app/components/About"
 import Navbar from "./components/Navbar";
+import '@fontsource/poppins';
 
 export default function Home() {
   return (
