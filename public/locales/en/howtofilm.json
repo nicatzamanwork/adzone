@@ -74,11 +74,21 @@
     },
     "partnerLocal": {
       "title": "Step 3: Partner with Local Production Services",
-      "text": "Collaborating with local production companies can streamline your filmmaking process. They can assist with location scouting, securing permits, equipment rental, hiring local crew, and navigating cultural differences."
+      "text": "Collaborating with local production companies can streamline your filmmaking process. They can assist with location scouting, securing permits, equipment rental, hiring local crew, and navigating cultural differences.",
+      "list": {
+        "item1": "Location scouting",
+        "item2": "Obtaining permits",
+        "item3": "Renting equipment",
+        "item4": "Hiring local crew and actors",
+        "item5": "Overcoming language and cultural differences"
+      }
     },
     "embraceCulture": {
       "title": "Step 4: Embrace the Local Culture",
-      "text": "Filming in Azerbaijan isn’t just about visuals—it’s about immersing yourself in its culture. Engage with locals and enjoy traditional cuisine to inspire your creative process."
+      "text": "Filming in Azerbaijan isn’t just about visuals—it’s about immersing yourself in its culture. Engage with locals and enjoy traditional cuisine to inspire your creative process.",
+      "list": {
+        "item": "Communicate with locals: the people of Azerbaijan are known for their kindness and hospitality"
+      }
     },
     "prepareClimate": {
       "title": "Step 5: Prepare for Climate and Terrain",
