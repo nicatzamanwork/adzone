@@ -127,7 +127,6 @@ const LocationPage = () => {
         }
 
         .modal-content {
-          background-color: white;
           border-radius: 8px;
           text-align: center;
           position: relative;
