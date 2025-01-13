@@ -13,13 +13,13 @@ export default function GalleryMain() {
     {
       title: t("cards.urban.title"),
       description: t("cards.urban.description"),
-      image: "/images/Khinalig (12) (1).jpg",
+      image: "/images/Ur/Mod/Ur-Mod-3.png",
       link: "/gallery/urban", // Link to Urban page
     },
     {
       title: t("cards.europe.title"),
       description: t("cards.europe.description"),
-      image: "/images/Mud volcanoes (14).jpg",
+      image: "/images/Eur/His/Eur-His-3.png",
       link: "/gallery/europe", // Link to Europe page
     },
     {
@@ -35,7 +35,6 @@ export default function GalleryMain() {
       link: "/gallery/ancient", // Link to Ancient page
     },
   ];
-  
 
   return (
     <>
