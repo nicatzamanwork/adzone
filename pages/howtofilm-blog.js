@@ -116,13 +116,13 @@ const HowToFilm = () => {
 
             <h3>{t("steps.partnerLocal.title")}</h3>
             <p>{t("steps.partnerLocal.text")}</p>
-            <ul>
+            {/* <ul>
               <li>{t("steps.partnerLocal.list.item1")}</li>
               <li>{t("steps.partnerLocal.list.item2")}</li>
               <li>{t("steps.partnerLocal.list.item3")}</li>
               <li>{t("steps.partnerLocal.list.item4")}</li>
               <li>{t("steps.partnerLocal.list.item5")}</li>
-            </ul>
+            </ul> */}
 
             <h3>{t("steps.embraceCulture.title")}</h3>
             <p>{t("steps.embraceCulture.text")}</p>
