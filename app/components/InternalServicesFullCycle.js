@@ -11,7 +11,7 @@ export default function GalleryMain() {
     {
       title: t("cards.locationScouting.title"),
       description: t("cards.locationScouting.description"),
-      image: "/images/Ateshgah.jpg",
+      image: "/images/Ateshgah.png",
       link: "/location-scouting",
     },
     {

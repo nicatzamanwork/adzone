@@ -60,7 +60,7 @@ const Services = () => {
         <Link href="/full-cycle-video" passHref>
           <div className="service-box">
             <img
-              src="/images/fullscale.jpg"
+              src="/images/fullscale.png"
               alt={t("services.fullCycleProduction.title")}
               className="service-image"
             />

@@ -17,7 +17,7 @@ export default function GalleryMain() {
     {
       title: t("cards.fullCycleProduction.title"),
       description: t("cards.fullCycleProduction.description"),
-      image: "/images/fullscale.jpg",
+      image: "/images/fullscale.png",
       link: "/full-cycle-video",
     },
   ];
