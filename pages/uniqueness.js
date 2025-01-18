@@ -5,10 +5,9 @@ import "../app/components/styles/About.css";
 import Navbar from "../app/components/Navbar";
 import Contact from "../app/components/Contact";
 import { useTranslation } from "react-i18next";
-import Link from "next/link";
 
 const About = () => {
-  const { t } = useTranslation("richcultural");
+  const { t } = useTranslation("diverselocation");
 
   return (
     <>
@@ -18,18 +17,18 @@ const About = () => {
           <h2 className="about-title">{t("title")}</h2>
           <p className="about-description">{t("description")}</p>
           <a
-            href="/gallerymain"
+            href="/locations"
             className="about-link"
             onClick={(e) => {
               e.preventDefault(); // Prevent default anchor behavior
-              window.location.href = "/gallerymain"; // Navigate to the gallery page
+              window.location.href = "/locations"; // Navigate to the gallery page
             }}
           >
             {t("catalogLink")}
           </a>
         </div>
         <div className="about-image">
-          <img src="images/7.png" alt={t("imageAlt")} />
+          <img src="images/location.png" alt={t("imageAlt")} />
         </div>
       </section>
       <Contact />

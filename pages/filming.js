@@ -7,7 +7,7 @@ import Contact from "../app/components/Contact";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const { t } = useTranslation("highfilmin");
+  const { t } = useTranslation("costeffective");
 
   return (
     <>
@@ -17,18 +17,18 @@ const About = () => {
           <h2 className="about-title">{t("title")}</h2>
           <p className="about-description">{t("description")}</p>
           <a
-            href="/gallerymain"
+            href="/locations"
             className="about-link"
             onClick={(e) => {
               e.preventDefault(); // Prevent default anchor behavior
-              window.location.href = "/gallerymain"; // Navigate to the home page with the contact section
+              window.location.href = "/locations"; // Navigate to the gallery page
             }}
           >
             {t("catalogLink")}
           </a>
         </div>
         <div className="about-image">
-          <img src="images/High access.jpg" alt={t("imageAlt")} />
+          <img src="images/cost-effective.jpeg" alt={t("imageAlt")} />
         </div>
       </section>
       <Contact />

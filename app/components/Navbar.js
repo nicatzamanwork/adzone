@@ -49,7 +49,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="/gallerymain" onClick={closeMenu}>
+          <a href="/locations" onClick={closeMenu}>
             {t("navbar.locations")}
           </a>
         </li>

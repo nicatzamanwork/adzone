@@ -15,7 +15,7 @@ const Locations = () => {
       <div className="locations-container">
         {/* Card 1: Overlay on the Image */}
         <div className="location-card">
-          <Link href="/richcultural">
+          <Link href="/heritage">
             <img src="/images/7.png" alt={t("richCulturalHeritage")} />
             <div className="overlay">
               <h3 style={{ color: "white" }}>{t("richCulturalHeritage")}</h3>
@@ -25,7 +25,7 @@ const Locations = () => {
 
         {/* Card 2: Content Below the Image */}
         <div className="location-card">
-          <Link href="/costeffective">
+          <Link href="/filming">
             <img
               src="/images/cost-effective.jpeg"
               alt={t("costEffectiveFilming")}
@@ -38,7 +38,7 @@ const Locations = () => {
 
         {/* Card 3: Overlay on the Image */}
         <div className="location-card">
-          <Link href="/diverselocations">
+          <Link href="/uniqueness">
             <img
               src="/images/location.png"
               alt={t("diverseAndUniqueLocations")}
@@ -53,7 +53,7 @@ const Locations = () => {
 
         {/* Card 4: Content Below the Image */}
         <div className="location-card">
-          <Link href="/highfilmin">
+          <Link href="/accesibility">
             <img
               src="/images/High access.jpg"
               alt={t("highFilmingAccessibility")}
