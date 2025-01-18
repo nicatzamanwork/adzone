@@ -22,6 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <html lang="en">
+      <meta name="yandex-verification" content="8f2676c36219bf2b" />
       <head>
         {/* Google Analytics Script */}
         <Script
