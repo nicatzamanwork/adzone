@@ -34,7 +34,7 @@ const EuropePage = () => {
       tags: ["History"],
     },
     {
-      src: "Eur-His-7.png",
+      src: "Eur-His-7-min.jpg",
       tags: ["History"],
     },
     {
@@ -61,7 +61,7 @@ const EuropePage = () => {
   ];
 
   const filters = [
-    { key: "all",label: t("filters.all") },
+    { key: "all", label: t("filters.all") },
     { key: "History", label: t("filters.history") },
     { key: "Modern", label: t("filters.modern") },
     { key: "Park", label: t("filters.park") },
@@ -84,7 +84,7 @@ const EuropePage = () => {
       <div className="location-page">
         {/* Header */}
         <header className="header">
-        <h1>{t("europe.title")}</h1>
+          <h1>{t("europe.title")}</h1>
         </header>
 
         {/* Filters */}
@@ -177,7 +177,6 @@ const EuropePage = () => {
         }
 
         .modal-content {
-         
           border-radius: 8px;
           text-align: center;
           position: relative;

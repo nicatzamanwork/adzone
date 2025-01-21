@@ -29,7 +29,7 @@ const About = () => {
           </a>
         </div>
         <div className="about-image">
-          <img src="images/7.png" alt={t("imageAlt")} />
+          <img src="images/7-min.jpg" alt={t("imageAlt")} />
         </div>
       </section>
       <Contact />

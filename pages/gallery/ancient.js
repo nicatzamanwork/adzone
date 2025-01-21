@@ -38,7 +38,7 @@ const AncientPage = () => {
       tags: ["All", "History"],
     },
     {
-      src: "/images/An/Vil/An-Vil-7.png",
+      src: "/images/An/Vil/An-Vil-7-min.jpg",
       tags: ["All", "History"],
     },
     {
@@ -78,7 +78,7 @@ const AncientPage = () => {
       tags: ["All", "History"],
     },
     {
-      src: "/images/An/His/An-His-17.png",
+      src: "/images/An/His/An-His-17-min.jpg",
       tags: ["All", "History"],
     },
     {
@@ -139,7 +139,7 @@ const AncientPage = () => {
       tags: ["All", "Village"],
     },
     {
-      src: "/images/An/Vil/An-Vil-7.png",
+      src: "/images/An/Vil/An-Vil-7-min.jpg",
       tags: ["All", "Village"],
     },
     {

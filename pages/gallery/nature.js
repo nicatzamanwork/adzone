@@ -23,7 +23,7 @@ const NaturePage = () => {
     { src: "Nat-Mou-4.png", tags: ["Mountain"] },
     { src: "Nat-Mou-5.png", tags: ["Mountain"] },
     { src: "Nat-Mou-6.png", tags: ["Mountain"] },
-    { src: "Nat-Mou-7.png", tags: ["Mountain"] },
+    { src: "Nat-Mou-7-min.jpg", tags: ["Mountain"] },
     { src: "Nat-Mou-8.png", tags: ["Mountain"] },
     { src: "Nat-Mou-9.png", tags: ["Mountain"] },
     { src: "Nat-Mou-10.png", tags: ["Mountain"] },
@@ -33,7 +33,7 @@ const NaturePage = () => {
     { src: "Nat-Mou-14.png", tags: ["Mountain"] },
     { src: "Nat-Mou-15.png", tags: ["Mountain"] },
     { src: "Nat-Mou-16.png", tags: ["Mountain"] },
-    { src: "Nat-Mou-17.png", tags: ["Mountain"] },
+    { src: "Nat-Mou-17-min.jpg", tags: ["Mountain"] },
     { src: "Nat-Mou-18.png", tags: ["Mountain"] },
     { src: "Nat-Mou-19.png", tags: ["Mountain"] },
 
@@ -44,7 +44,7 @@ const NaturePage = () => {
 
   const filters = [
     { key: "all", label: t("filters.all") },
-    { key: "Desert", label: t("filters.desert")},
+    { key: "Desert", label: t("filters.desert") },
     { key: "Mountain", label: t("filters.mountain") },
     { key: "Water", label: t("filters.water") },
   ];
@@ -163,7 +163,6 @@ const NaturePage = () => {
         }
 
         .modal-content {
-          
           border-radius: 8px;
           text-align: center;
           position: relative;

@@ -34,7 +34,7 @@ const UrbanPage = () => {
       tags: ["Modern"],
     },
     {
-      src: "Ur-Mod-7.png",
+      src: "Ur-Mod-7-min.jpg",
       tags: ["Modern"],
     },
     {
@@ -76,7 +76,7 @@ const UrbanPage = () => {
     { key: "all", label: t("filters.all") },
     { key: "History", label: t("filters.history") },
     { key: "Modern", label: t("filters.modern") },
-    { key: "View", label: t("filters.view")},
+    { key: "View", label: t("filters.view") },
   ];
 
   const filteredImages =
@@ -193,7 +193,6 @@ const UrbanPage = () => {
         }
 
         .modal-content {
-         
           border-radius: 8px;
           text-align: center;
           position: relative;

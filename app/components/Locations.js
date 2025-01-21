@@ -16,7 +16,7 @@ const Locations = () => {
         {/* Card 1: Overlay on the Image */}
         <div className="location-card">
           <Link href="/heritage">
-            <img src="/images/7.png" alt={t("richCulturalHeritage")} />
+            <img src="/images/7-min.jpg" alt={t("richCulturalHeritage")} />
             <div className="overlay">
               <h3 style={{ color: "white" }}>{t("richCulturalHeritage")}</h3>
             </div>
@@ -59,7 +59,9 @@ const Locations = () => {
               alt={t("highFilmingAccessibility")}
             />
             <div className="overlay">
-              <h3 style={{ color: "white" }}>{t("highFilmingAccessibility")}</h3>
+              <h3 style={{ color: "white" }}>
+                {t("highFilmingAccessibility")}
+              </h3>
             </div>
           </Link>
         </div>
