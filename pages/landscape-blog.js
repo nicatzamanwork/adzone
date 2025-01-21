@@ -10,6 +10,12 @@ const Petroglyphs = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>Filming Landscapes - Capturing Stunning Outdoor Scenes</title>
+
       <Navbar />
       <div className="page-container">
         <main className="content">

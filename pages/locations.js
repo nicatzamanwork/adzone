@@ -38,6 +38,12 @@ export default function GalleryMain() {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>Choosing the Perfect Filming Location - A Complete Guide</title>
+
       <Navbar />
       <Head>
         <title>{t("title")}</title>

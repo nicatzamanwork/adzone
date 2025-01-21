@@ -12,19 +12,23 @@ export default function GalleryMain() {
       title: t("cards.logisticSupport.title"),
       description: t("cards.logisticSupport.description"),
       image: "/images/scouting.jpg",
-      link: "/logistics-support",
+      link: "/logistics",
     },
     {
       title: t("cards.fullCycleProduction.title"),
       description: t("cards.fullCycleProduction.description"),
       image: "/images/fullscale.png",
-      link: "/full-cycle-video",
+      link: "/production",
     },
   ];
 
   return (
     <>
       <div className="location-page">
+        <meta
+          name="description"
+          content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+        />
         {/* Cards Section */}
         <div className="card-grid">
           {cards.map((card, index) => (

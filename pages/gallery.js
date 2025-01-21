@@ -47,6 +47,17 @@ const LocationPage = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <meta
+        name="description"
+        content="Browse our gallery to see stunning visuals and creative projects crafted by Filmworks. Discover our expertise in professional video production."
+      />
+
+      <title>Gallery - Explore Our Creative Works | Filmworks</title>
+
       <Navbar />
       <div className="location-page">
         {/* Header Section */}

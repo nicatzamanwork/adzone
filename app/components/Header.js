@@ -9,6 +9,10 @@ const Header = () => {
 
   return (
     <header className="header">
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
       <div className="header-overlay">
         <div className="header-content">
           <h1>{t("title")}</h1>

@@ -8,6 +8,12 @@ const About = () => {
 
   return (
     <section className="about" id="about">
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>About Us - Filmworks</title>
+
       <div className="about-content">
         <h5 className="about-subtitle">{t("subtitle")}</h5>
         <h2 className="about-title">{t("title")}</h2>
@@ -17,7 +23,7 @@ const About = () => {
         </a>
       </div>
       <div className="about-image">
-        <img src="images/rich.png" alt="Office Environment" />
+        <img src="images/rich.jpg" alt="Office Environment" />
       </div>
     </section>
   );

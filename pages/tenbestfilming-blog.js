@@ -10,6 +10,12 @@ const TenBestFilm = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>Top 10 Filming Tips - Secrets for Creating Great Videos</title>
+
       <Navbar />
       <div className="page-container">
         <main className="content">

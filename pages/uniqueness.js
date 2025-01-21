@@ -11,7 +11,16 @@ const About = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>
+        Creating Unique Films - Stand Out with Innovative Storytelling
+      </title>
+
       <Navbar />
+
       <section className="about" id="about">
         <div className="about-content">
           <h2 className="about-title">{t("title")}</h2>

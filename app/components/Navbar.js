@@ -23,6 +23,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
       <input type="checkbox" id="check" />
       <label htmlFor="check" className="checkbtn">
         <img src="/images/hamburger.png" alt="Menu" />

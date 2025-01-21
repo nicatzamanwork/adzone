@@ -59,6 +59,12 @@ const ContactForm = () => {
 
   return (
     <div className="contact-container" id="contact">
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>Contact Us - Get in Touch | Filmworks</title>
+
       <div className="contact-form-left">
         <form className="contact-form" onSubmit={handleSubmit}>
           <h5 className="form-title">{t("form.title")}</h5>
@@ -130,10 +136,7 @@ const ContactForm = () => {
         <h2>{t("info.contact")}</h2>
         <p>
           <strong>
-            <a
-              href="mailto:info@adzone.az"
-              style={{  color: "inherit" }}
-            >
+            <a href="mailto:info@adzone.az" style={{ color: "inherit" }}>
               {t("info.email")}: info@filmworks.az
             </a>
           </strong>
@@ -141,10 +144,7 @@ const ContactForm = () => {
 
         <p>
           <strong>
-            <a
-              href="tel:+994102554396"
-              style={{  color: "inherit" }}
-            >
+            <a href="tel:+994102554396" style={{ color: "inherit" }}>
               {t("info.phone")}: +994102554396
             </a>
           </strong>

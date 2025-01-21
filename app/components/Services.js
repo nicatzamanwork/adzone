@@ -9,14 +9,20 @@ const Services = () => {
 
   return (
     <section id="services" className="services-section">
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>Our Services - Filmworks</title>
+
       <h5 className="about-subtitle">{t("subtitle")}</h5>
       <h2 className="services-title">{t("title")}</h2>
       <div className="service-boxes-container">
         {/* Service 1 */}
-        <Link href="/location-scouting" passHref>
+        <Link href="/scouting" passHref>
           <div className="service-box">
             <img
-              src="/images/Ateshgah.jpg"
+              src="/images/Ateshgah-min.jpg"
               alt={t("services.locationScouting.title")}
               className="service-image"
             />
@@ -35,7 +41,7 @@ const Services = () => {
         </Link>
 
         {/* Service 2 */}
-        <Link href="/logistics-support" passHref>
+        <Link href="/logistics" passHref>
           <div className="service-box">
             <img
               src="/images/scouting.jpg"
@@ -57,7 +63,7 @@ const Services = () => {
         </Link>
 
         {/* Service 3 */}
-        <Link href="/full-cycle-video" passHref>
+        <Link href="/production" passHref>
           <div className="service-box">
             <img
               src="/images/fullscale.png"

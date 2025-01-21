@@ -41,6 +41,10 @@ const LanguageSelector = () => {
 
   return (
     <div style={{ position: "relative" }} ref={dropdownRef}>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
       <div
         onClick={toggleDropdown}
         style={{

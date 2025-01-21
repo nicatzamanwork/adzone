@@ -10,6 +10,10 @@ const Locations = () => {
 
   return (
     <section id="locations">
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
       <h5 className="about-subtitle">{t("subtitle")}</h5>
       <h2>{t("title")}</h2>
       <div className="locations-container">
@@ -40,7 +44,7 @@ const Locations = () => {
         <div className="location-card">
           <Link href="/uniqueness">
             <img
-              src="/images/location.png"
+              src="/images/location.jpeg"
               alt={t("diverseAndUniqueLocations")}
             />
             <div className="overlay">

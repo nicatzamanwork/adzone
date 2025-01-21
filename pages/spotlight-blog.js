@@ -10,6 +10,10 @@ const Spotlight = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
       <Navbar />
       <div className="page-container">
         <main className="content">

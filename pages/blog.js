@@ -11,6 +11,12 @@ const Locations = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>Blog - Insights and Tips | Filmworks</title>
+
       <Navbar />
       <section id="locations">
         <h2>{t("title")}</h2>
@@ -18,7 +24,7 @@ const Locations = () => {
           {/* Card 1 */}
           <div className="location-card">
             <Link href="/howtofilm-blog">
-              <img src="/images/Ateshgah (15).jpg" alt={t("card1.alt")} />
+              <img src="/images/Ateshgah (15)-min.jpg" alt={t("card1.alt")} />
               <div className="overlay">
                 <h3 style={{ color: "white" }}>{t("card1.title")}</h3>
               </div>

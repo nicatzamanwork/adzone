@@ -10,13 +10,19 @@ const HowToFilm = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
+      <title>How to Film - Essential Tips for Stunning Video Production</title>
+
       <Navbar />
       <div className="page-container">
         <main className="content">
           <header className="header">
             <h2 className="header-title">{t("title")}</h2>
             <Image
-              src="/images/Ateshgah (15).jpg"
+              src="/images/Ateshgah (15)-min.jpg"
               alt={t("headerImageAlt")}
               className="header-image"
               width={800}
@@ -116,13 +122,13 @@ const HowToFilm = () => {
 
             <h3>{t("steps.partnerLocal.title")}</h3>
             <p>{t("steps.partnerLocal.text")}</p>
-             <ul>
+            <ul>
               <li>{t("steps.partnerLocal.list.item1")}</li>
               <li>{t("steps.partnerLocal.list.item2")}</li>
               <li>{t("steps.partnerLocal.list.item3")}</li>
               <li>{t("steps.partnerLocal.list.item4")}</li>
               <li>{t("steps.partnerLocal.list.item5")}</li>
-            </ul> 
+            </ul>
 
             <h3>{t("steps.embraceCulture.title")}</h3>
             <p>{t("steps.embraceCulture.text")}</p>

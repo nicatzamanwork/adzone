@@ -11,6 +11,10 @@ const About = () => {
 
   return (
     <>
+      <meta
+        name="description"
+        content="Filmworks provides high-quality video production services. Contact us today for your project needs."
+      />
       <Navbar />
       <section className="about" id="about">
         <div className="about-content">
