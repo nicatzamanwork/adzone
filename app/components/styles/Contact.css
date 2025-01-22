@@ -96,3 +96,25 @@
     font-size: 16px; /* Adjust the font size of the submit button */
   }
 }
+
+.social-links {
+  margin-top: 20px;
+  display: flex; /* Ensures the icons are aligned in a row */
+  gap: 15%; /* Default gap for desktop screens */
+}
+
+.social-links a {
+  color: #000; /* Black or a default color */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff0000; /* Highlight color on hover */
+}
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+  .social-links {
+    gap: 25%; /* Larger gap for smaller screens */
+  }
+}

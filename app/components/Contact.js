@@ -1,8 +1,9 @@
-"use client";
+"use client"; // Add this directive at the top
 
 import React, { useState } from "react";
 import "../components/styles/Contact.css";
 import { useTranslation } from "react-i18next";
+import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa"; // Import icons
 
 const ContactForm = () => {
   const { t } = useTranslation("contact"); // Use 'contact' namespace
@@ -165,6 +166,30 @@ const ContactForm = () => {
         <p>{t("info.days.friday")}</p>
         <p>{t("info.days.saturday")}</p>
         <p>{t("info.days.sunday")}</p>
+
+        <div className="social-links">
+          <a
+            href="https://www.instagram.com/filmworks.az/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram size={24} style={{ marginRight: "10px" }} />
+          </a>
+          <a
+            href="https://www.youtube.com/@FilmworksAzerbaijan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube size={24} style={{ marginRight: "10px" }} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/filmworks-azerbaijan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={24} />
+          </a>
+        </div>
       </div>
     </div>
   );
