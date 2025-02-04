@@ -64,7 +64,7 @@ const ContactForm = () => {
         name="description"
         content="Filmworks provides high-quality video production services. Contact us today for your project needs."
       />
-      <title>Contact Us - Get in Touch | Filmworks</title>
+      <title>Filmworks Azerbaijan</title>
 
       <div className="contact-form-left">
         <form className="contact-form" onSubmit={handleSubmit}>

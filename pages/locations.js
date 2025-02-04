@@ -46,7 +46,7 @@ export default function GalleryMain() {
 
       <Navbar />
       <Head>
-        <title>{t("title")}</title>
+        <title>Locations - Choosing the Perfect Filming Location</title>
       </Head>
       <header className="header">
         <h1 className="title">{t("title")}</h1>

@@ -8,11 +8,11 @@ const About = () => {
 
   return (
     <section className="about" id="about">
+      <title>About Us - Filmworks</title>
       <meta
         name="description"
         content="Filmworks provides high-quality video production services. Contact us today for your project needs."
       />
-      <title>About Us - Filmworks</title>
 
       <div className="about-content">
         <h5 className="about-subtitle">{t("subtitle")}</h5>

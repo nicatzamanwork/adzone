@@ -15,13 +15,15 @@ const InternalService = () => {
         name="description"
         content="Filmworks provides high-quality video production services. Contact us today for your project needs."
       />
-      <title>Location Scouting Tips - Finding the Perfect Spot for Your Film</title>
 
       <Navbar />
       <header
         className="internal-header"
         style={{ backgroundImage: `url('/images/Ateshgah-min.jpg')` }}
       >
+        <title>
+          Location Scouting Tips - Finding the Perfect Spot for Your Film
+        </title>
         <div className="internal-header-overlay">
           <div className="internal-header-content">
             <h1>{t("header.title")}</h1>

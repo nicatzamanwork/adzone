@@ -12,12 +12,12 @@ export default function Home() {
     <>
       <Navbar />
       <Head>
-        <title> Discover Azerbaijan - FilmWorks</title>
         <meta
           name="description"
           content="Your next film destination. Discover Azerbaijan's stunning film locations and rich cultural heritage."
         />
         <link rel="icon" href="/logo.png" />
+        <title> Discover Azerbaijan - FilmWorks</title>
       </Head>
       <Header />
       <Locations />

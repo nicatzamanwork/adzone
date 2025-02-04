@@ -19,13 +19,13 @@ const Blog = () => {
         name="description"
         content="Filmworks provides high-quality video production services. Contact us today for your project needs."
       />
-      <title>Filming Logistics - Managing Your Production Like a Pro</title>
 
       <Navbar />
       <header
         className="header"
         style={{ backgroundImage: `url('/images/scouting.jpg')` }}
       >
+        <title>Filming Logistics - Managing Your Production Like a Pro</title>
         <div className="header-overlay">
           <div className="header-content">
             <h1>{t("header.title")}</h1>

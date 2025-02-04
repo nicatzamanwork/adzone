@@ -56,7 +56,7 @@ const LocationPage = () => {
         content="Browse our gallery to see stunning visuals and creative projects crafted by Filmworks. Discover our expertise in professional video production."
       />
 
-      <title>Gallery - Explore Our Creative Works | Filmworks</title>
+      <title>Gallery - Explore Our Creative Works | Filmworks Azerbaijan</title>
 
       <Navbar />
       <div className="location-page">
