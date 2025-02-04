@@ -17,6 +17,7 @@ export default function Home() {
           content="Your next film destination. Discover Azerbaijan's stunning film locations and rich cultural heritage."
         />
         <link rel="icon" href="/logo.png" />
+        <meta name="google-site-verification" content="hYaowzyeM2yYSxLNC1zqB9ZvJuPNtyi2rbIxFF818_k" />
         <title> Discover Azerbaijan - FilmWorks</title>
       </Head>
       <Header />
